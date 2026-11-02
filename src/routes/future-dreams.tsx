@@ -13,7 +13,7 @@ export const Route=createFileRoute('/future-dreams')({head:()=>pageHead('Future 
 const fdPhotos=[loansPhoto,taxationPhoto,wealthPhoto];
 const fdAlt=['Home loan sanction letter with a model house, calculator and keys on a walnut desk','Income tax return, GST registration papers and a certificate of incorporation beside a brass scale','Mutual fund documents and a life insurance policy with a sapling growing from a stack of rupee coins'];
 
-function FutureDreams(){return <main>
+function FutureDreams(){return <main className="fd-scope">
   <PageBanner eyebrow="A sister venture" title="Future Dreams." description="Financial & Marketing Consultancy — loans, taxation, registrations, insurance and investments for individuals, families and local businesses across Berhampore and Murshidabad, from the same head office as Arindam Maitra Tax Consulting Unit."/>
   <section className="section wrap split-content">
     <div className="prose"><Reveal>

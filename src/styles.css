@@ -22,14 +22,14 @@
  --radius-md: 2px; --radius-lg: 4px;
 }
 :root {
-  --background: oklch(0.99 0.004 230); --foreground: oklch(0.235 0.045 250);
-  --primary: oklch(0.721 0.1 81); --primary-foreground: oklch(0.185 0.05 267);
-  --secondary: oklch(0.945 0.042 226); --secondary-foreground: oklch(0.235 0.045 250);
-  --muted: oklch(0.965 0.014 228); --muted-foreground: oklch(0.47 0.03 250);
-  --accent: oklch(0.955 0.03 84); --accent-foreground: oklch(0.235 0.045 250);
-  --card: oklch(0.99 0.004 230); --border: oklch(0.9 0.024 230);
-  --inverse: oklch(0.235 0.045 250); --inverse-muted: oklch(0.45 0.04 250);
-  --destructive: oklch(0.55 0.2 25); --hero-shade: linear-gradient(90deg, color-mix(in oklab,var(--secondary) 94%,transparent),color-mix(in oklab,var(--secondary) 55%,transparent) 62%,color-mix(in oklab,var(--secondary) 15%,transparent));
+  --background: oklch(0.996 0.002 255); --foreground: oklch(0.215 0.03 260);
+  --primary: oklch(0.48 0.165 261); --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.958 0.022 252); --secondary-foreground: oklch(0.215 0.03 260);
+  --muted: oklch(0.968 0.014 255); --muted-foreground: oklch(0.5 0.028 258);
+  --accent: oklch(0.93 0.05 252); --accent-foreground: oklch(0.215 0.03 260);
+  --card: oklch(0.997 0.002 255); --border: oklch(0.88 0.024 255);
+  --inverse: oklch(0.215 0.045 260); --inverse-muted: oklch(0.55 0.035 258);
+  --destructive: oklch(0.55 0.2 25); --hero-shade: linear-gradient(90deg, color-mix(in oklab,var(--secondary) 96%,transparent) 0%,color-mix(in oklab,var(--secondary) 86%,transparent) 55%,color-mix(in oklab,var(--secondary) 40%,transparent) 80%,color-mix(in oklab,var(--secondary) 8%,transparent) 100%);
  --shadow-menu: 0 8px 25px color-mix(in oklab,var(--foreground) 12%,transparent);
 }
 * { border-color: var(--border); box-sizing: border-box; letter-spacing: 0; }
@@ -51,7 +51,7 @@ button,a,input,select,textarea { outline-offset:4px; }
 .desktop-nav a.nav-sister:hover,.desktop-nav a.nav-sister[data-status=active] { background:var(--primary); color:var(--primary-foreground); }
 .corporate-button { border-radius:2px; text-transform:uppercase; font-size:10px; font-weight:600; min-height:48px; padding:0 25px; box-shadow:none; }
 .hero-button { background:var(--primary); color:var(--primary-foreground); }
-.hero-button:hover { background:var(--accent); }
+.hero-button:hover { background:color-mix(in oklab,var(--primary) 84%,#000); }
 .hero-outline { background:transparent; color:var(--inverse); border:1px solid color-mix(in oklab,var(--inverse) 40%,transparent); }
 .hero-outline:hover { background:color-mix(in oklab,var(--inverse) 10%,transparent); }
 .navy-button { background:var(--secondary); color:var(--secondary-foreground); }
@@ -184,6 +184,17 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 @keyframes hero-zoom { from { transform:scale(1.07); } to { transform:scale(1); } }
 .reveal.revealed .service-rule { animation:rule-grow .9s .1s ease both; }
 @keyframes rule-grow { from { width:0; } to { width:42px; } }
+/* Future Dreams — pinned to the pre-retint palette (excluded from the logo retheme) */
+.fd-scope {
+  --background: oklch(0.99 0.004 230); --foreground: oklch(0.235 0.045 250);
+  --primary: oklch(0.721 0.1 81); --primary-foreground: oklch(0.185 0.05 267);
+  --secondary: oklch(0.945 0.042 226); --secondary-foreground: oklch(0.235 0.045 250);
+  --muted: oklch(0.965 0.014 228); --muted-foreground: oklch(0.47 0.03 250);
+  --accent: oklch(0.955 0.03 84); --accent-foreground: oklch(0.235 0.045 250);
+  --card: oklch(0.99 0.004 230); --border: oklch(0.9 0.024 230);
+  --inverse: oklch(0.235 0.045 250); --inverse-muted: oklch(0.45 0.04 250);
+  --hero-shade: linear-gradient(90deg, color-mix(in oklab,var(--secondary) 94%,transparent),color-mix(in oklab,var(--secondary) 55%,transparent) 62%,color-mix(in oklab,var(--secondary) 15%,transparent));
+}
 .fd-item-list { display:grid; grid-template-columns:1fr 1fr; gap:10px 28px; padding:0; margin:20px 0 0; list-style:none; }
 .fd-item-list li { position:relative; font-size:13px; color:var(--muted-foreground); line-height:1.9; padding-left:22px; }
 .fd-item-list li::before { content:''; position:absolute; left:0; top:12px; width:9px; height:1px; background:var(--primary); }
