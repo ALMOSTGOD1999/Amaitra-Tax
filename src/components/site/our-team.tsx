@@ -52,12 +52,12 @@ export function OurTeamSection() {
               key={member.name}
               className="group flex flex-col items-center rounded-sm border border-border bg-card px-6 py-10 text-center transition duration-300 hover:border-primary/60 hover:shadow-md"
             >
-              <div className="relative size-40 shrink-0 overflow-hidden rounded-full ring-1 ring-secondary transition duration-300 group-hover:ring-2 group-hover:ring-primary sm:size-44">
+              <div className="relative size-44 shrink-0 overflow-hidden rounded-full ring-1 ring-secondary transition duration-300 group-hover:ring-2 group-hover:ring-primary sm:size-52">
                 <img
                   src={member.photo}
                   alt={`Portrait of ${member.name}`}
                   loading="lazy"
-                  className="size-full object-cover"
+                  className="size-full object-cover object-top"
                 />
               </div>
               <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70" />
