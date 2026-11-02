@@ -184,15 +184,15 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 @keyframes hero-zoom { from { transform:scale(1.07); } to { transform:scale(1); } }
 .reveal.revealed .service-rule { animation:rule-grow .9s .1s ease both; }
 @keyframes rule-grow { from { width:0; } to { width:42px; } }
-/* Future Dreams — pinned to the pre-retint palette (excluded from the logo retheme) */
+/* Future Dreams — logo palette: royal-blue ink + deep-red accents (replaces legacy gold) */
 .fd-scope {
-  --background: oklch(0.99 0.004 230); --foreground: oklch(0.235 0.045 250);
-  --primary: oklch(0.721 0.1 81); --primary-foreground: oklch(0.185 0.05 267);
-  --secondary: oklch(0.945 0.042 226); --secondary-foreground: oklch(0.235 0.045 250);
-  --muted: oklch(0.965 0.014 228); --muted-foreground: oklch(0.47 0.03 250);
-  --accent: oklch(0.955 0.03 84); --accent-foreground: oklch(0.235 0.045 250);
-  --card: oklch(0.99 0.004 230); --border: oklch(0.9 0.024 230);
-  --inverse: oklch(0.235 0.045 250); --inverse-muted: oklch(0.45 0.04 250);
+  --background: oklch(0.992 0.003 252); --foreground: oklch(0.33 0.1 262);
+  --primary: oklch(0.38 0.11 28); --primary-foreground: oklch(0.99 0.012 25);
+  --secondary: oklch(0.955 0.035 255); --secondary-foreground: oklch(0.33 0.1 262);
+  --muted: oklch(0.968 0.014 255); --muted-foreground: oklch(0.48 0.045 262);
+  --accent: oklch(0.945 0.03 27); --accent-foreground: oklch(0.3 0.06 27);
+  --card: oklch(0.996 0.002 252); --border: oklch(0.9 0.025 258);
+  --inverse: oklch(0.33 0.1 262); --inverse-muted: oklch(0.48 0.045 262);
   --hero-shade: linear-gradient(90deg, color-mix(in oklab,var(--secondary) 94%,transparent),color-mix(in oklab,var(--secondary) 55%,transparent) 62%,color-mix(in oklab,var(--secondary) 15%,transparent));
 }
 .fd-item-list { display:grid; grid-template-columns:1fr 1fr; gap:10px 28px; padding:0; margin:20px 0 0; list-style:none; }
