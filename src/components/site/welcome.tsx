@@ -82,7 +82,7 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
       frame = requestAnimationFrame(draw);
     }
     frame = requestAnimationFrame(draw);
-    const timer = window.setTimeout(onClose, 15500);
+    const timer = window.setTimeout(onClose, 11000);
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
@@ -102,7 +102,7 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
       <canvas ref={canvas} aria-hidden="true" />
       <div className="intro-brand">
         <p className="intro-name">ARINDAM MAITRA</p>
-        <p className="intro-subtitle">TAX CONSULTING requestAnimationFrame</p>
+        <p className="intro-subtitle">TAX CONSULTING UNIT</p>
         <div className="intro-line" />
         <p className="intro-services">Tax • Compliance • Advisory</p>
         <p className="intro-tagline">
