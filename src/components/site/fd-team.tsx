@@ -1,18 +1,6 @@
-import team201 from "@/assets/team2/team2-01.jpg";
-import team202 from "@/assets/team2/team2-02.jpg";
-import team203 from "@/assets/team2/team2-03.jpg";
-
-/*
- * Our Team (second roster) — drop-in section for the Arindam Maitra
- * Tax Consultancy site. Same tokens as our-team.tsx (site's stylesheet):
- *   --font-serif   "Playfair Display"
- *   --font-sans    "Inter"
- *   --foreground   oklch(23.5% .045 250)   navy ink
- *   --primary      oklch(72.1% .1 81)      gold accent
- *   --secondary    oklch(94.5% .042 226)   light blue tint
- *   --border       oklch(90% .024 230)
- *   --muted-foreground oklch(47% .03 250)
- */
+import team201 from '@/assets/team2/team2-01.jpg';
+import team202 from '@/assets/team2/team2-02.jpg';
+import team203 from '@/assets/team2/team2-03.jpg';
 
 interface TeamMember {
   name: string;
@@ -26,11 +14,10 @@ const TEAM: TeamMember[] = [
   { name: "Biprodip Das", role: "Office Executive", photo: team203 },
 ];
 
-export function OurTeamSection2() {
+export function FutureDreamsTeam() {
   return (
     <section className="bg-background py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
-        {/* Section header — same eyebrow treatment as the site's hero/services */}
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex items-center justify-center gap-3">
             <span aria-hidden="true" className="h-px w-10 bg-primary" />
@@ -40,14 +27,12 @@ export function OurTeamSection2() {
             <span aria-hidden="true" className="h-px w-10 bg-primary" />
           </div>
           <h2 className="mt-4 font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            The people behind <em className="text-primary">the numbers</em>
+            The people behind <em className="text-primary">Future Dreams</em>
           </h2>
           <p className="mt-4 text-sm text-muted-foreground">
-            Arindam Maitra Tax Consultancy — Tax &middot; Compliance &middot; Advisory
+            Financial &amp; Marketing Consultancy — Loans &middot; Taxation &middot; Investments
           </p>
         </div>
-
-        {/* Team grid */}
         <ul className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((member) => (
             <li

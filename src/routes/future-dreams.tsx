@@ -2,6 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowUpRight, Mail, MapPin, Phone, Smartphone } from 'lucide-react';
 import { PageBanner } from '@/components/site/layout';
 import { Reveal } from '@/components/site/reveal';
+import { FutureDreamsTeam } from '@/components/site/fd-team';
 import { Button } from '@/components/ui/button';
 import { business, fdServices, pageHead, sisterVenture } from '@/lib/site';
 import loansPhoto from '@/assets/fd-loans.jpg';
@@ -43,6 +44,7 @@ function FutureDreams(){return <main className="fd-scope">
     </Reveal></div>
     <Reveal delay={120}><img src={fdPhotos[i]} alt={fdAlt[i]} width={1600} height={1072} loading="lazy" className="editorial-photo"/></Reveal>
   </section>)}
+  <FutureDreamsTeam/>
   <section className="section faq-band"><div className="wrap"><Reveal>
     <div className="eyebrow">Working together</div>
     <h2 className="section-heading">Three practices. One roof.</h2>

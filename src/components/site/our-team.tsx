@@ -1,4 +1,3 @@
-import { Reveal } from '@/components/site/reveal';
 import team01 from '@/assets/team/team-01.jpg';
 import team02 from '@/assets/team/team-02.jpg';
 import team03 from '@/assets/team/team-03.jpg';
@@ -11,7 +10,6 @@ import team09 from '@/assets/team/team-09.jpg';
 import team10 from '@/assets/team/team-10.jpg';
 import team11 from '@/assets/team/team-11.jpg';
 import team12 from '@/assets/team/team-12.jpg';
-import team13 from '@/assets/team/team-13.jpg';
 import team14 from '@/assets/team/team-14.jpg';
 import team15 from '@/assets/team/team-15.jpg';
 import team16 from '@/assets/team/team-16.jpg';
@@ -37,7 +35,6 @@ const TEAM: TeamMember[] = [
   { name: "Mriganka Sarkar", role: "Sr. Tax Assistant & Accounts", photo: team10 },
   { name: "Sanjoy Sarkar", role: "Office Executive — Systems", photo: team11 },
   { name: "Asim Datta", role: "GST & Accounts Head", photo: team12 },
-  { name: "Ayan Chaudhuri", role: "Cash Manager & Management", photo: team13 },
   { name: "Bibek Das", role: "Accountant", photo: team14 },
   { name: "Chandan Chakrabarty", role: "Accountant", photo: team15 },
   { name: "Anindya Chandra", role: "Office Management & Systems", photo: team16 },
@@ -47,25 +44,29 @@ const TEAM: TeamMember[] = [
 
 export function OurTeamSection() {
   return (
-    <section className="section">
-      <div className="wrap">
-        <ul className="team-grid">
-          {TEAM.map((member, i) => (
-            <li key={member.name} className="team-card">
-              <Reveal delay={(i % 3) * 110}>
-                <div className="team-photo">
-                  <img
-                    src={member.photo}
-                    alt={`Portrait of ${member.name}`}
-                    width={400}
-                    height={400}
-                    loading="lazy"
-                  />
-                </div>
-                <span aria-hidden="true" className="team-rule" />
-                <h2>{member.name}</h2>
-                <p className="team-role">{member.role}</p>
-              </Reveal>
+    <section className="bg-background py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-6">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {TEAM.map((member) => (
+            <li
+              key={member.name}
+              className="group flex flex-col items-center rounded-sm border border-border bg-card px-6 py-10 text-center transition duration-300 hover:border-primary/60 hover:shadow-md"
+            >
+              <div className="relative size-40 shrink-0 overflow-hidden rounded-full ring-1 ring-secondary transition duration-300 group-hover:ring-2 group-hover:ring-primary sm:size-44">
+                <img
+                  src={member.photo}
+                  alt={`Portrait of ${member.name}`}
+                  loading="lazy"
+                  className="size-full object-cover"
+                />
+              </div>
+              <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70" />
+              <h2 className="mt-4 font-serif text-xl font-bold text-foreground">
+                {member.name}
+              </h2>
+              <p className="mt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+                {member.role}
+              </p>
             </li>
           ))}
         </ul>
