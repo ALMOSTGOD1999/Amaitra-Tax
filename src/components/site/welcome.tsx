@@ -54,9 +54,9 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
     function draw(now: number) {
       const t = (now - start) / 1000;
       ctx.clearRect(0, 0, w, h);
-      const collapse = Math.max(0, Math.min(1, (t - 5.4) / 1.7));
+      const collapse = Math.max(0, Math.min(1, (t - 4.3) / 1.5));
       const alpha = Math.max(0, 1 - collapse);
-      if (t < 7.5) {
+      if (t < 6.0) {
         const radius = Math.min(w * 0.47, h * 0.43);
         for (let i = 0; i < 230; i++) {
           const angle = i * 2.39996 + t * (0.15 + (i % 5) * 0.024);
