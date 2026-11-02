@@ -57,7 +57,7 @@ export function OurTeamSection() {
                   src={member.photo}
                   alt={`Portrait of ${member.name}`}
                   loading="lazy"
-                  className="size-full object-cover translate-y-[5%] scale-[1.15]"
+                  className="size-full object-cover"
                 />
               </div>
               <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70" />
