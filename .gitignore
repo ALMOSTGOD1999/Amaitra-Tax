@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.output/
+.wrangler/
+.vercel/
+.tanstack/
+dist/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+
+# Misc
+*.local
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

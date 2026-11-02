@@ -1,0 +1,8 @@
+import { createFileRoute, Link } from '@tanstack/react-router';
+import { ArrowUpRight } from 'lucide-react';
+import { PageBanner, PhotoStrip } from '@/components/site/layout';
+import { Reveal } from '@/components/site/reveal';
+import { pageHead, services } from '@/lib/site';
+import itrFiling from '@/assets/itr-filing.jpg';
+export const Route=createFileRoute('/services')({head:()=>pageHead('Tax & Compliance Services','Explore GST compliance, income tax advisory, accounting, TDS, corporate compliance and startup guidance from Arindam Maitra Tax Consulting Unit.'),component:Services});
+function Services(){return <main><PageBanner eyebrow="Our expertise" title="The right support. In every detail." description="From an individual tax return to day-to-day business compliance, practical assistance shaped around your needs."/><PhotoStrip src={itrFiling} alt="Income tax return booklet, PAN card, ledgers and calculator on a navy desk in warm lamplight"/><section className="wrap section"><div className="service-list">{services.map((s,i)=><Reveal key={s.name} delay={(i%2)*110}><article className="service-detail"><span className="eyebrow">0{i+1} / Expertise</span><h2>{s.name}</h2><p>{s.description}</p><ul>{s.items.map(item=><li key={item}>{item}</li>)}</ul><Link className="text-link" to="/contact">Discuss your requirements <ArrowUpRight size={15}/></Link></article></Reveal>)}</div><Reveal><p className="section-intro mt-9">Scope, fees and any specialist coordination are agreed after reviewing your requirements. Services are subject to applicable law and eligibility.</p></Reveal></section></main>;}

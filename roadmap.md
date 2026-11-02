@@ -1,0 +1,16 @@
+# Website roadmap
+- [x] Create six distinct pages and shared navigation in the selected corporate gold direction.
+- [x] Implement large, readable, slower orbital welcome and replay/skip controls.
+- [x] Include 18 tax/GST FAQs and official government resource links.
+- [x] Connect supplied office address and phone to contact actions.
+- [x] Verify page navigation, welcome, FAQ, contact actions, and small-screen layout.
+- [x] Future Dreams dedicated page with detailed service groups (loans, taxation, financial products).
+- [x] Add detailed Future Dreams services from card with photos and detailing.
+- [x] Create Tradx Equisearch sister-concern page with PL Capital association and contacts.
+- [x] Add scroll-reveal animations across every page.
+- [x] Add new tax/finance photography across pages; verify layout and animations.
+- [x] Verify mobile responsiveness on every page after the new photos and animations.
+- [x] Rebrand to "Arindam Maitra Tax Consulting Unit" with the supplied logo in header, footer and favicon.
+- [x] Replace the Tradx Equisearch page with a Neelkanth Capital page themed to its brochure logo.
+- [ ] Theme the Future Dreams page to its blue-and-maroon logo.
+- [ ] Add the Our Team section (name, designation, photo, employee code, mail id, address) — details still needed from the user.
