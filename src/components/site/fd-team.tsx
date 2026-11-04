@@ -1,6 +1,6 @@
-import team201 from '@/assets/team2/team2-01.jpg';
-import team202 from '@/assets/team2/team2-02.jpg';
-import team203 from '@/assets/team2/team2-03.jpg';
+import team201 from "@/assets/team2/team2-01.jpg";
+import team202 from "@/assets/team2/team2-02.jpg";
+import team203 from "@/assets/team2/team2-03.jpg";
 
 interface TeamMember {
   name: string;
@@ -39,7 +39,7 @@ export function FutureDreamsTeam() {
               key={member.name}
               className="group flex flex-col items-center rounded-sm border border-border bg-card px-6 py-10 text-center transition duration-300 hover:border-primary/60 hover:shadow-md"
             >
-              <div className="relative size-44 shrink-0 overflow-hidden rounded-full ring-1 ring-secondary transition duration-300 group-hover:ring-2 group-hover:ring-primary sm:size-52">
+              <div className="relative size-44 shrink-0 overflow-hidden rounded-full sm:size-52">
                 <img
                   src={member.photo}
                   alt={`Portrait of ${member.name}`}
@@ -48,9 +48,7 @@ export function FutureDreamsTeam() {
                 />
               </div>
               <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70" />
-              <h3 className="mt-4 font-serif text-xl font-bold text-foreground">
-                {member.name}
-              </h3>
+              <h3 className="mt-4 font-serif text-xl font-bold text-foreground">{member.name}</h3>
               <p className="mt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
                 {member.role}
               </p>

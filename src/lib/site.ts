@@ -3,7 +3,7 @@ export const business = {
   phone: "094341 08699",
   phoneHref: "tel:+919434108699",
   address: "35/8, Ukilabad Rd, Raninagar, Gora Bazar, Berhampore, Murshidabad, West Bengal 742101",
-  maps: "https://www.google.com/maps/search/?api=1&query=Arindam+Maitra+Tax+Consulting+Unit+35%2F8+Ukilabad+Road+Berhampore+742101",
+  maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
 };
 export const sisterVenture = {
   name: "Future Dreams",
@@ -142,6 +142,39 @@ export const services = [
       "Compliance planning",
     ],
   },
+  {
+    name: "NGO Darpan",
+    description:
+      "Registration and ongoing profile support for NGOs, trusts and societies on the NGO Darpan portal.",
+    items: [
+      "NGO Darpan registration",
+      "Profile and project updates",
+      "Annual compliance support",
+      "CSR-1 registration guidance",
+    ],
+  },
+  {
+    name: "EPFO & ESIC",
+    description:
+      "Establishment-level provident fund and state insurance compliance handled end to end.",
+    items: [
+      "EPFO registration",
+      "ESIC registration",
+      "Monthly ECR and return filing",
+      "Employee onboarding and exit compliance",
+    ],
+  },
+  {
+    name: "Professional Tax (P-Tax)",
+    description:
+      "West Bengal professional tax registration, deductions and returns for employers and professionals.",
+    items: [
+      "P-Tax registration",
+      "Monthly and quarterly return filing",
+      "Employee deduction compliance",
+      "Certificate renewal",
+    ],
+  },
 ];
 export const fdServices = [
   {
@@ -184,7 +217,13 @@ export const fdServices = [
     tag: "Growth & protection",
     description:
       "Long-term savings and protection, introduced carefully and matched to what you want your money to do for your family or your business.",
-    items: ["Mutual funds", "General & life insurance", "Online share trading"],
+    items: [
+      "Mutual funds",
+      "General & life insurance",
+      "Online share trading",
+      "Real estate",
+      "Tour & travels",
+    ],
     note: "Insurance is the subject matter of solicitation. Mutual fund and securities investments are subject to market risks; read all scheme and product related documents carefully.",
   },
 ] as const;

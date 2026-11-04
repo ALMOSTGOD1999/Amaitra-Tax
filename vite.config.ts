@@ -48,7 +48,18 @@ export default defineConfig(({ command, mode }) => {
         },
         server: { entry: "server" },
       }),
-      ...(command === "build" ? [nitro({ defaultPreset: process.env.VERCEL ? "vercel" : "cloudflare-module" })] : []),
+      ...(command === "build"
+        ? [
+            nitro({
+              // Coolify (self-hosted Node) is the default deploy target.
+              // Override with NITRO_PRESET, or set VERCEL=1 / CLOUDFLARE=1 explicitly.
+              defaultPreset:
+                process.env.VERCEL ? "vercel"
+                : process.env.CLOUDFLARE ? "cloudflare-module"
+                : process.env.NITRO_PRESET ?? "node-server",
+            }),
+          ]
+        : []),
       viteReact(),
     ],
     server: {
