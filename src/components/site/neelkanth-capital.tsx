@@ -34,6 +34,8 @@ import kotakLogo from "@/assets/kotak.png";
 import dspLogo from "@/assets/dsp.png";
 import iciciLogo from "@/assets/icici-pru.png";
 import bajajLogo from "@/assets/bajaj-amc.png";
+import arindamPhoto from "@/assets/md/arindam-maitra.jpg";
+import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 
 const PHONE = "7501126747";
 const EMAIL = "neelkanthcapital2026@gmail.com";
@@ -286,6 +288,41 @@ function Commitment() {
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {item.text}
               </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const DIRECTORS = [
+  { name: "ARINDAM MAITRA", photo: arindamPhoto, alt: "Arindam Maitra, Managing Director" },
+  { name: "SOUMIK KUMAR", photo: soumikPhoto, alt: "Soumik Kumar, Managing Director" },
+];
+
+function ManagingDirectors() {
+  return (
+    <section className="py-24">
+      <div className="section-shell">
+        <SectionHeading
+          eyebrow="Leadership"
+          title="Our Managing Directors"
+        />
+        <div className="mx-auto mt-14 grid max-w-3xl gap-5 sm:grid-cols-2">
+          {DIRECTORS.map((d) => (
+            <div
+              key={d.name}
+              className="card-hover rounded-3xl border border-primary/10 bg-card p-7 text-center shadow-[var(--shadow-card)]"
+            >
+              <img
+                src={d.photo}
+                alt={d.alt}
+                loading="lazy"
+                className="mx-auto h-32 w-32 rounded-full object-cover"
+              />
+              <h3 className="mt-5 text-lg font-bold text-foreground">{d.name}</h3>
+              <p className="mt-1 text-sm font-semibold text-primary">Managing Director</p>
             </div>
           ))}
         </div>
@@ -555,6 +592,7 @@ export function NeelkanthCapitalPage() {
     <div className="nc-page min-h-screen bg-background text-foreground">
       <Hero />
       <Commitment />
+      <ManagingDirectors />
       <About />
       <Services />
       <WhyChooseUs />

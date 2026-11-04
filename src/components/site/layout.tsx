@@ -110,7 +110,7 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="wrap">
-        {pathname !== "/contact" && (
+        {pathname !== "/contact" && pathname !== "/neelkanth-capital" && (
           <div className="contact-grid">
             <div>
               <h2 className="footer-title">
