@@ -135,6 +135,8 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 .filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
 .resource-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
 .resource { border:1px solid var(--border); padding:30px; }
+.resource-logo { display:flex; align-items:center; justify-content:center; height:84px; border:1px solid var(--border); border-radius:8px; background:var(--background); margin-bottom:20px; padding:12px; }
+.resource-logo img { max-height:56px; max-width:100%; width:auto; height:auto; object-fit:contain; }
 .resource h2 { font-size:25px; margin:15px 0; }
 .resource p { color:var(--muted-foreground); font-size:13px; line-height:1.8; }
 .resource-domain { font-size:10px; color:var(--primary); }
