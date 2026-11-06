@@ -107,7 +107,7 @@ function FutureDreams() {
             <div className="venture-contact-line">
               <Smartphone size={18} />
               <span>
-                M.&nbsp;{" "}
+                &nbsp;{" "}
                 <a href={sisterVenture.mobiles[0]!.href}>{sisterVenture.mobiles[0]!.label}</a>{" "}
                 &nbsp;/&nbsp;{" "}
                 <a href={sisterVenture.mobiles[1]!.href}>{sisterVenture.mobiles[1]!.label}</a>
@@ -124,7 +124,7 @@ function FutureDreams() {
             <div className="venture-contact-line">
               <MapPin size={18} />
               <span>
-                Berhampore &amp; Head Office: {sisterVenture.address}
+                Head Office: {sisterVenture.address}
                 <br />
                 <a
                   href={business.maps}
