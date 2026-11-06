@@ -2,7 +2,23 @@ export const business = {
   name: "Arindam Maitra Tax Consulting Unit",
   phone: "094341 08699",
   phoneHref: "tel:+919434108699",
+  phones: [
+    { label: "98005 80003", href: "tel:+919800580003" },
+    { label: "77971 00177", href: "tel:+917797100177" },
+    { label: "094341 08699", href: "tel:+919434108699" },
+  ],
+  emails: ["arindamtax.maitra.online@gmail.com", "arindamtax.maitra@gmail.com"],
   address: "35/8, Ukilabad Rd, Berhampore, Murshidabad, West Bengal 742101",
+  addresses: [
+    {
+      label: "35/8, Ukilabad Rd, Berhampore, Murshidabad, West Bengal 742101",
+      maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
+    },
+    {
+      label: "Bhawani Dreams, 9, Sreema Road, Dum Dum Cantonment, Kolkata 700065",
+      maps: "https://www.google.com/maps?q=Bhawani+Dreams%2C+9+Sreema+Road%2C+Dum+Dum+Cantonment%2C+Kolkata+700065&z=17&hl=en",
+    },
+  ],
   maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
 };
 export const sisterVenture = {

@@ -106,9 +106,9 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
         <div className="intro-line" />
         <p className="intro-services">Tax • Compliance • Advisory</p>
         <p className="intro-tagline">
-          You focus on your goals.
+          Your Trust, Our Responsibility.
           <br />
-          We take care of the numbers.
+          Your Privacy, Our Priority.
         </p>
       </div>
       <span className="intro-bottom">PRECISION. CLARITY. PEACE OF MIND.</span>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, X, Phone, MapPin, ArrowUpRight, RotateCcw } from "lucide-react";
+import { Menu, X, Phone, MapPin, ArrowUpRight, RotateCcw, Mail } from "lucide-react";
 import { Reveal } from "@/components/site/reveal";
 import { Button } from "@/components/ui/button";
 import { InquiryForm } from "./inquiry-form";
@@ -27,8 +27,8 @@ export function SiteHeader() {
           <img
             src={brand.src}
             alt={brand.alt}
-            width={54}
-            height={54}
+            width={64}
+            height={64}
             className="brand-logo"
             style={brand.wide ? { width: "auto", height: 64 } : undefined}
             fetchPriority="high"
@@ -83,15 +83,35 @@ export function SiteHeader() {
 export function ContactDetails() {
   return (
     <>
-      <div className="contact-line">
-        <MapPin size={18} />
-        <a href={business.maps} target="_blank" rel="noopener noreferrer">
-          {business.address}
-        </a>
-      </div>
+      {business.addresses.map((entry) => (
+        <div className="contact-line" key={entry.label}>
+          <MapPin size={18} />
+          <a href={entry.maps} target="_blank" rel="noopener noreferrer">
+            {entry.label}
+          </a>
+        </div>
+      ))}
       <div className="contact-line">
         <Phone size={18} />
-        <a href={business.phoneHref}>{business.phone}</a>
+        <span>
+          {business.phones.map((entry, index) => (
+            <span key={entry.href}>
+              {index > 0 && " / "}
+              <a href={entry.href}>{entry.label}</a>
+            </span>
+          ))}
+        </span>
+      </div>
+      <div className="contact-line">
+        <Mail size={18} />
+        <span>
+          {business.emails.map((entry, index) => (
+            <span key={entry}>
+              {index > 0 && " / "}
+              <a href={`mailto:${entry}`}>{entry}</a>
+            </span>
+          ))}
+        </span>
       </div>
       <div className="contact-line">
         <ArrowUpRight size={18} />
