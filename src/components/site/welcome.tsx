@@ -54,9 +54,9 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
     function draw(now: number) {
       const t = (now - start) / 1000;
       ctx.clearRect(0, 0, w, h);
-      const collapse = Math.max(0, Math.min(1, (t - 4.3) / 1.5));
+      const collapse = Math.max(0, Math.min(1, (t - 3.0) / 1.05));
       const alpha = Math.max(0, 1 - collapse);
-      if (t < 6.0) {
+      if (t < 4.2) {
         const radius = Math.min(w * 0.47, h * 0.43);
         for (let i = 0; i < 230; i++) {
           const angle = i * 2.39996 + t * (0.15 + (i % 5) * 0.024);
@@ -82,7 +82,7 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
       frame = requestAnimationFrame(draw);
     }
     frame = requestAnimationFrame(draw);
-    const timer = window.setTimeout(onClose, 11000);
+    const timer = window.setTimeout(onClose, 7700);
     const previous = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {

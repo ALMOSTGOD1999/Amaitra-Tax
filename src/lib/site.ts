@@ -2,7 +2,7 @@ export const business = {
   name: "Arindam Maitra Tax Consulting Unit",
   phone: "094341 08699",
   phoneHref: "tel:+919434108699",
-  address: "35/8, Ukilabad Rd, Raninagar, Gora Bazar, Berhampore, Murshidabad, West Bengal 742101",
+  address: "35/8, Ukilabad Rd, Berhampore, Murshidabad, West Bengal 742101",
   maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
 };
 export const sisterVenture = {
@@ -27,7 +27,7 @@ export const neelkanth = {
   phone: "7501126747",
   phoneHref: "tel:+917501126747",
   email: "neelkanthcapital2026@gmail.com",
-  address: "42/G/F, Swarnamayee Road, Raninagar, Gora Bazar, Berhampore, West Bengal 742101",
+  address: "42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101",
   stats: [
     { value: "600+", label: "Clients served" },
     { value: "₹500 Cr+", label: "Assets under advisory" },
