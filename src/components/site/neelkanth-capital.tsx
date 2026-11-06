@@ -40,8 +40,7 @@ import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 const PHONE = "7501126747";
 const EMAIL = "neelkanthcapital2026@gmail.com";
 const WEBSITE = "www.neelkanthcapital.com";
-const ADDRESS =
-  "42/G/F, Swarnamayee Road, Raninagar, Gora Bazar, Berhampore, West Bengal 742101";
+const ADDRESS = "42/G/F, Swarnamayee Road, Raninagar, Gora Bazar, Berhampore, West Bengal 742101";
 
 const COMMITMENTS = [
   {
@@ -171,13 +170,12 @@ function Hero() {
             </span>
           </div>
           <h1 className="mt-6 animate-fade-up text-5xl font-extrabold leading-[1.05] text-foreground sm:text-6xl lg:text-7xl">
-            Your trusted partner in{" "}
-            <span className="text-gradient-sky">Wealth Creation…</span>
+            Your trusted partner in <span className="text-gradient-sky">Wealth Creation…</span>
           </h1>
           <p className="mt-6 max-w-xl animate-fade-up text-lg leading-relaxed text-muted-foreground">
-            Neelkanth Capital is a premier financial services and wealth
-            advisory firm — helping individuals and businesses create, preserve
-            and grow wealth through research-driven investment solutions.
+            Neelkanth Capital is a premier financial services and wealth advisory firm — helping
+            individuals and businesses create, preserve and grow wealth through research-driven
+            investment solutions.
           </p>
           <div className="mt-8 flex animate-fade-up flex-wrap items-center gap-4">
             <a
@@ -204,9 +202,7 @@ function Hero() {
                 key={stat.label}
                 className="rounded-2xl border border-primary/15 bg-card/80 px-4 py-4 shadow-[var(--shadow-card)] backdrop-blur"
               >
-                <dt className="text-xs font-semibold text-muted-foreground">
-                  {stat.label}
-                </dt>
+                <dt className="text-xs font-semibold text-muted-foreground">{stat.label}</dt>
                 <dd className="mt-1 font-display text-2xl font-extrabold text-primary">
                   {stat.value}
                 </dd>
@@ -242,24 +238,12 @@ function SectionHeading({
   align?: "center" | "left";
 }) {
   return (
-    <div
-      className={
-        align === "center"
-          ? "mx-auto max-w-2xl text-center"
-          : "max-w-2xl text-left"
-      }
-    >
+    <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"}>
       <span className="inline-block rounded-full bg-secondary px-4 py-1.5 text-xs font-bold tracking-widest text-primary uppercase">
         {eyebrow}
       </span>
-      <h2 className="mt-4 text-4xl font-extrabold text-foreground sm:text-5xl">
-        {title}
-      </h2>
-      {text ? (
-        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          {text}
-        </p>
-      ) : null}
+      <h2 className="mt-4 text-4xl font-extrabold text-foreground sm:text-5xl">{title}</h2>
+      {text ? <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{text}</p> : null}
     </div>
   );
 }
@@ -282,12 +266,8 @@ function Commitment() {
               <div className="inline-flex rounded-2xl bg-secondary p-3.5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <item.icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-lg font-bold text-foreground">
-                {item.title}
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {item.text}
-              </p>
+              <h3 className="mt-5 text-lg font-bold text-foreground">{item.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.text}</p>
             </div>
           ))}
         </div>
@@ -297,18 +277,15 @@ function Commitment() {
 }
 
 const DIRECTORS = [
-  { name: "ARINDAM MAITRA", photo: arindamPhoto, alt: "Arindam Maitra, Managing Director" },
-  { name: "SOUMIK KUMAR", photo: soumikPhoto, alt: "Soumik Kumar, Managing Director" },
+  { name: "ARINDAM MAITRA", photo: arindamPhoto, alt: "Arindam Maitra, Managing Partner" },
+  { name: "SOUMIK KUMAR", photo: soumikPhoto, alt: "Soumik Kumar, Managing Partner" },
 ];
 
 function ManagingDirectors() {
   return (
     <section className="py-24">
       <div className="section-shell">
-        <SectionHeading
-          eyebrow="Leadership"
-          title="Our Managing Directors"
-        />
+        <SectionHeading eyebrow="Leadership" title="Our Leaderships" />
         <div className="mx-auto mt-14 grid max-w-3xl gap-5 sm:grid-cols-2">
           {DIRECTORS.map((d) => (
             <div
@@ -342,10 +319,9 @@ function About() {
             title="One stop solution for all your financial needs"
           />
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Neelkanth Capital is a premier financial services and wealth
-            advisory firm committed to helping individuals and businesses
-            create, preserve and grow wealth through research-driven investment
-            solutions.
+            Neelkanth Capital is a premier financial services and wealth advisory firm committed to
+            helping individuals and businesses create, preserve and grow wealth through
+            research-driven investment solutions.
           </p>
           <ul className="mt-8 space-y-3">
             {[
@@ -370,17 +346,11 @@ function About() {
             />
             <div className="mt-8 grid grid-cols-2 gap-4 text-center">
               <div className="rounded-2xl bg-secondary p-5">
-                <p className="font-display text-3xl font-extrabold text-primary">
-                  600+
-                </p>
-                <p className="mt-1 text-xs font-semibold text-muted-foreground">
-                  Clients Served
-                </p>
+                <p className="font-display text-3xl font-extrabold text-primary">600+</p>
+                <p className="mt-1 text-xs font-semibold text-muted-foreground">Clients Served</p>
               </div>
               <div className="rounded-2xl bg-secondary p-5">
-                <p className="font-display text-3xl font-extrabold text-primary">
-                  ₹500+ Cr
-                </p>
+                <p className="font-display text-3xl font-extrabold text-primary">₹500+ Cr</p>
                 <p className="mt-1 text-xs font-semibold text-muted-foreground">
                   Assets Under Advisory
                 </p>
@@ -416,12 +386,8 @@ function Services() {
                 <div className="inline-flex rounded-2xl bg-secondary p-3.5 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                   <service.icon className="h-6 w-6" />
                 </div>
-                <h3 className="mt-5 text-lg font-bold text-foreground">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {service.text}
-                </p>
+                <h3 className="mt-5 text-lg font-bold text-foreground">{service.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{service.text}</p>
               </div>
             </div>
           ))}
@@ -461,9 +427,7 @@ function WhyChooseUs() {
                   }
                 />
               </div>
-              <p className="mt-5 font-display text-lg font-bold">
-                {cert.title}
-              </p>
+              <p className="mt-5 font-display text-lg font-bold">{cert.title}</p>
               <p
                 className={
                   cert.dark
@@ -540,8 +504,8 @@ function Contact() {
                 Let's plan your wealth journey
               </h2>
               <p className="mt-4 max-w-md text-primary-foreground/85">
-                One stop solution for all your financial needs. Reach out today
-                for a conversation that's focused entirely on your goals.
+                One stop solution for all your financial needs. Reach out today for a conversation
+                that's focused entirely on your goals.
               </p>
               <a
                 href={`tel:+91${PHONE}`}
@@ -572,9 +536,7 @@ function Contact() {
                         {item.value}
                       </a>
                     ) : (
-                      <p className="mt-1 font-semibold text-primary-foreground">
-                        {item.value}
-                      </p>
+                      <p className="mt-1 font-semibold text-primary-foreground">{item.value}</p>
                     )}
                   </div>
                 </li>

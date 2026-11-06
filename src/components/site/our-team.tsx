@@ -59,9 +59,7 @@ export function OurTeamSection() {
             />
           </div>
           <span aria-hidden="true" className="mt-7 h-px w-12 bg-primary/70" />
-          <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
-            Arindam Maitra Tax Firm
-          </p>
+
           <h2 className="mt-2 font-serif text-3xl font-bold text-foreground sm:text-4xl">
             Arindam Maitra
           </h2>
