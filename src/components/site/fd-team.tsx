@@ -35,14 +35,14 @@ export function FutureDreamsTeam() {
             Financial &amp; Marketing Consultancy — Loans &middot; Taxation &middot; Investments
           </p>
         </div>
-        <ul className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {TEAM.map((member) => (
             <li
               key={member.name}
               className="group flex flex-col items-center rounded-sm border border-border bg-card px-6 py-10 text-center transition duration-300 hover:border-primary/60 hover:shadow-md"
             >
               {member.photo ? (
-                <div className="relative size-44 shrink-0 overflow-hidden rounded-full sm:size-52">
+                <div className="relative size-44 shrink-0 overflow-hidden rounded-full sm:size-48 lg:size-40 xl:size-48">
                   <img
                     src={member.photo}
                     alt={`Portrait of ${member.name}`}
@@ -53,7 +53,7 @@ export function FutureDreamsTeam() {
               ) : (
                 <div
                   aria-label={`Portrait of ${member.name} coming soon`}
-                  className="flex size-44 shrink-0 items-center justify-center rounded-full bg-secondary font-serif text-5xl text-primary sm:size-52"
+                  className="flex size-44 shrink-0 items-center justify-center rounded-full bg-secondary font-serif text-5xl text-primary sm:size-48 lg:size-40 xl:size-48"
                 >
                   {member.name
                     .split(" ")

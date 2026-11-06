@@ -67,6 +67,7 @@ function FutureDreams() {
           ))}
         </ul>
       </section>
+      <FutureDreamsTeam />
       <section className="section wrap split-content">
         <div className="prose">
           <Reveal>
@@ -171,7 +172,6 @@ function FutureDreams() {
           </Reveal>
         </section>
       ))}
-      <FutureDreamsTeam />
       <section className="section faq-band">
         <div className="wrap">
           <Reveal>
