@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { InquiryForm } from "./inquiry-form";
 import { business, nav } from "@/lib/site";
 import amLogo from "@/assets/logo.png";
-import fdLogo from "@/assets/fd-logo.png";
+import fdLogo from "@/assets/fd-logo.jpg";
 import ncLogo from "@/assets/neelkanth-logo.png";
 
 function brandFor(pathname: string) {
@@ -30,7 +30,7 @@ export function SiteHeader() {
             width={54}
             height={54}
             className="brand-logo"
-            style={brand.wide ? { width: "auto" } : undefined}
+            style={brand.wide ? { width: "auto", height: 64 } : undefined}
             fetchPriority="high"
           />
         </Link>
@@ -132,7 +132,7 @@ export function SiteFooter() {
               height={40}
               loading="lazy"
               className="footer-logo"
-              style={brand.wide ? { width: "auto" } : undefined}
+              style={brand.wide ? { width: "auto", height: 48 } : undefined}
             />
             <span>
               © {new Date().getFullYear()} Arindam Maitra Tax Consulting Unit. All rights reserved.
