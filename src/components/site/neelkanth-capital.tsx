@@ -553,8 +553,8 @@ export function NeelkanthCapitalPage() {
   return (
     <div className="nc-page min-h-screen bg-background text-foreground">
       <Hero />
-      <Commitment />
       <ManagingDirectors />
+      <Commitment />
       <About />
       <Services />
       <WhyChooseUs />
