@@ -47,7 +47,7 @@ export function FutureDreamsTeam() {
                     src={member.photo}
                     alt={`Portrait of ${member.name}`}
                     loading="lazy"
-                    className="size-full object-cover"
+                    className="size-full object-cover scale-[1.18]"
                   />
                 </div>
               ) : (

@@ -55,7 +55,7 @@ function FutureDreams() {
                   src={p.photo}
                   alt={`Portrait of ${p.name}`}
                   loading="lazy"
-                  className="size-full object-cover"
+                  className="size-full object-cover scale-[1.18]"
                 />
               </div>
               <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70" />
