@@ -8,14 +8,36 @@ import { business, fdServices, pageHead, sisterVenture } from '@/lib/site';
 import loansPhoto from '@/assets/fd-loans.jpg';
 import taxationPhoto from '@/assets/fd-taxation.jpg';
 import wealthPhoto from '@/assets/fd-wealth.jpg';
+import fdPartner1 from '@/assets/fd-partner-1.jpg';
+import fdPartner2 from '@/assets/fd-partner-2.jpg';
+import fdPartner3 from '@/assets/fd-partner-3.jpg';
 
 export const Route=createFileRoute('/future-dreams')({head:()=>pageHead('Future Dreams — Our Sister Venture','Future Dreams Financial & Marketing Consultancy offers loans, taxation and registration support, mutual funds, insurance and share trading from Berhampore, Murshidabad.'),component:FutureDreams});
 
 const fdPhotos=[loansPhoto,taxationPhoto,wealthPhoto];
 const fdAlt=['Home loan sanction letter with a model house, calculator and keys on a walnut desk','Income tax return, GST registration papers and a certificate of incorporation beside a brass scale','Mutual fund documents and a life insurance policy with a sapling growing from a stack of rupee coins'];
+const fdPartners=[
+  {name:'Arindam Maitra',role:'Partner',photo:fdPartner1},
+  {name:'Sayan Kumar Das',role:'Partner',photo:fdPartner2},
+  {name:'Avipsa Maitra',role:'Partner',photo:fdPartner3},
+];
 
 function FutureDreams(){return <main className="fd-scope">
   <PageBanner eyebrow="A sister venture" title="Future Dreams." description="Financial & Marketing Consultancy — loans, taxation, registrations, insurance and investments for individuals, families and local businesses across Berhampore and Murshidabad, from the same head office as Arindam Maitra Tax Consulting Unit."/>
+  <section className="section wrap">
+    <div className="eyebrow">Our Leaderships</div>
+    <h2 className="section-heading">Our Leaderships.</h2>
+    <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+      {fdPartners.map((p)=><li key={p.name} className="group flex flex-col items-center rounded-sm border border-border bg-card px-6 py-10 text-center transition duration-300 hover:border-primary/60 hover:shadow-md">
+        <div className="relative size-44 shrink-0 overflow-hidden rounded-full sm:size-52">
+          <img src={p.photo} alt={`Portrait of ${p.name}`} loading="lazy" className="size-full object-cover"/>
+        </div>
+        <span aria-hidden="true" className="mt-6 h-px w-8 bg-primary/70"/>
+        <h3 className="mt-4 font-serif text-xl font-bold text-foreground">{p.name}</h3>
+        <p className="mt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">{p.role}</p>
+      </li>)}
+    </ul>
+  </section>
   <section className="section wrap split-content">
     <div className="prose"><Reveal>
       <div className="eyebrow">The group</div>
