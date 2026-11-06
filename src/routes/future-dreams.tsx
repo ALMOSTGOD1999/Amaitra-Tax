@@ -43,7 +43,7 @@ function FutureDreams() {
       />
       <section className="section wrap">
         <div className="eyebrow">Our Leaderships</div>
-        <h2 className="section-heading">Our Leaderships.</h2>
+        <h2 className="section-heading">Our Leaderships</h2>
         <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
           {fdPartners.map((p) => (
             <li
@@ -68,6 +68,78 @@ function FutureDreams() {
         </ul>
       </section>
       <FutureDreamsTeam />
+      {fdServices.map((s, i) => (
+        <section
+          key={s.name}
+          className={`section wrap split-content${i % 2 ? " split-reverse" : ""}`}
+        >
+          <div className="prose">
+            <Reveal>
+              <div className="eyebrow">{`0${i + 1} / ${s.tag}`}</div>
+              <h2 className="section-heading">{s.name}.</h2>
+              <p>{s.description}</p>
+              <ul className="fd-item-list">
+                {s.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <p className="text-[12px] text-muted-foreground mt-6 leading-relaxed">{s.note}</p>
+            </Reveal>
+          </div>
+          <Reveal delay={120}>
+            <img
+              src={fdPhotos[i]}
+              alt={fdAlt[i]}
+              width={1600}
+              height={1072}
+              loading="lazy"
+              className="editorial-photo"
+            />
+          </Reveal>
+        </section>
+      ))}
+      <section className="section faq-band">
+        <div className="wrap">
+          <Reveal>
+            <div className="eyebrow">Working together</div>
+            <h2 className="section-heading">Three practices. One roof.</h2>
+            <p className="section-intro">
+              Future Dreams, the tax practice and our sister concern Tradx Equisearch — for
+              market-linked investments in association with PL Capital — coordinate from the same
+              office, so your financial, tax and investment conversations stay connected.
+            </p>
+            <div className="process-row">
+              <article>
+                <span className="number">01</span>
+                <h3>Loans & funding</h3>
+                <p>
+                  Vehicle, home, project, education and mortgage loans — options explained and
+                  applications prepared.
+                </p>
+              </article>
+              <article>
+                <span className="number">02</span>
+                <h3>Registrations & tax</h3>
+                <p>
+                  Income tax, GST, P. Tax, EPF & ESIC and every kind of entity registration, with
+                  trademarks and project reports.
+                </p>
+              </article>
+              <article>
+                <span className="number">03</span>
+                <h3>Investments & protection</h3>
+                <p>
+                  Mutual funds, general & life insurance and online share trading, matched to your
+                  goals.
+                </p>
+              </article>
+            </div>
+            <Link to="/tradx-equisearch" className="text-link">
+              Meet our sister concern, Tradx Equisearch <ArrowUpRight size={14} />
+            </Link>
+          </Reveal>
+        </div>
+      </section>
       <section className="section wrap split-content">
         <div className="prose">
           <Reveal>
@@ -141,78 +213,6 @@ function FutureDreams() {
             </p>
           </div>
         </Reveal>
-      </section>
-      {fdServices.map((s, i) => (
-        <section
-          key={s.name}
-          className={`section wrap split-content${i % 2 ? " split-reverse" : ""}`}
-        >
-          <div className="prose">
-            <Reveal>
-              <div className="eyebrow">{`0${i + 1} / ${s.tag}`}</div>
-              <h2 className="section-heading">{s.name}.</h2>
-              <p>{s.description}</p>
-              <ul className="fd-item-list">
-                {s.items.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-              <p className="text-[12px] text-muted-foreground mt-6 leading-relaxed">{s.note}</p>
-            </Reveal>
-          </div>
-          <Reveal delay={120}>
-            <img
-              src={fdPhotos[i]}
-              alt={fdAlt[i]}
-              width={1600}
-              height={1072}
-              loading="lazy"
-              className="editorial-photo"
-            />
-          </Reveal>
-        </section>
-      ))}
-      <section className="section faq-band">
-        <div className="wrap">
-          <Reveal>
-            <div className="eyebrow">Working together</div>
-            <h2 className="section-heading">Three practices. One roof.</h2>
-            <p className="section-intro">
-              Future Dreams, the tax practice and our sister concern Tradx Equisearch — for
-              market-linked investments in association with PL Capital — coordinate from the same
-              office, so your financial, tax and investment conversations stay connected.
-            </p>
-            <div className="process-row">
-              <article>
-                <span className="number">01</span>
-                <h3>Loans & funding</h3>
-                <p>
-                  Vehicle, home, project, education and mortgage loans — options explained and
-                  applications prepared.
-                </p>
-              </article>
-              <article>
-                <span className="number">02</span>
-                <h3>Registrations & tax</h3>
-                <p>
-                  Income tax, GST, P. Tax, EPF & ESIC and every kind of entity registration, with
-                  trademarks and project reports.
-                </p>
-              </article>
-              <article>
-                <span className="number">03</span>
-                <h3>Investments & protection</h3>
-                <p>
-                  Mutual funds, general & life insurance and online share trading, matched to your
-                  goals.
-                </p>
-              </article>
-            </div>
-            <Link to="/tradx-equisearch" className="text-link">
-              Meet our sister concern, Tradx Equisearch <ArrowUpRight size={14} />
-            </Link>
-          </Reveal>
-        </div>
       </section>
     </main>
   );

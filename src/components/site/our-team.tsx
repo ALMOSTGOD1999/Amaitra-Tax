@@ -64,8 +64,7 @@ export function OurTeamSection() {
             Arindam Maitra
           </h2>
           <p className="mt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-            Proprietor <br />
-            Advocate and TAX Consultant
+            Advocate & TAX Consultant Proprietor <br />
           </p>
         </figure>
         <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">

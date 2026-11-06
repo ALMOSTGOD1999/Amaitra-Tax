@@ -144,7 +144,9 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="wrap">
-        {pathname !== "/contact" && pathname !== "/neelkanth-capital" && (
+        {pathname !== "/contact" &&
+          pathname !== "/neelkanth-capital" &&
+          pathname !== "/future-dreams" && (
           <div className="contact-grid">
             <div>
               <h2 className="footer-title">
