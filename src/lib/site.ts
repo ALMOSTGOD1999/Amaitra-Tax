@@ -40,10 +40,10 @@ export const neelkanth = {
   since: "Since 2020",
   website: "www.neelkanthcapital.com",
   websiteUrl: "https://www.neelkanthcapital.com",
-  phone: "7501126747",
-  phoneHref: "tel:+917501126747",
+  phone: "033-65982863",
+  phoneHref: "tel:033-65982863",
   email: "neelkanthcapital2026@gmail.com",
-  address: "42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101",
+  address: "Tulip Towers, 42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101",
   stats: [
     { value: "600+", label: "Clients served" },
     { value: "₹500 Cr+", label: "Assets under advisory" },

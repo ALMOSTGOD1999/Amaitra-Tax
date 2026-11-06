@@ -27,10 +27,10 @@ export function SiteHeader() {
           <img
             src={brand.src}
             alt={brand.alt}
-            width={64}
-            height={64}
+            width={84}
+            height={84}
             className="brand-logo"
-            style={brand.wide ? { width: "auto", height: 64 } : undefined}
+            style={brand.wide ? { width: "auto", height: 84 } : undefined}
             fetchPriority="high"
           />
         </Link>

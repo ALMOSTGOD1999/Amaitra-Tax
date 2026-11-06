@@ -39,11 +39,11 @@ a { text-decoration:none; }
 button,a,input,select,textarea { outline-offset:4px; }
 ::selection { background:var(--accent); color:var(--foreground); }
 .wrap { width:min(1184px, calc(100% - 96px)); margin-inline:auto; }
-.site-header { height:96px; background:var(--background); position:relative; z-index:30; border-bottom:1px solid var(--border); }
+.site-header { height:120px; background:var(--background); position:relative; z-index:30; border-bottom:1px solid var(--border); }
 .header-inner { height:100%; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .brand { display:flex; flex-direction:column; flex-shrink:0; min-width:0; }
-.brand-logo { height:64px; width:auto; max-width:230px; object-fit:contain; display:block; }
-@media(max-width:760px) { .brand-logo { height:48px; max-width:170px; } }
+.brand-logo { height:84px; width:auto; max-width:280px; object-fit:contain; display:block; }
+@media(max-width:760px) { .brand-logo { height:60px; max-width:210px; } }
 .desktop-nav { display:flex; gap:26px; align-items:center; }
 .desktop-nav a { font-size:10px; text-transform:uppercase; font-weight:600; padding-block:12px; border-bottom:1px solid transparent; }
 .desktop-nav a:hover,.desktop-nav a[data-status=active] { color:var(--primary); border-color:var(--primary); }
@@ -159,8 +159,8 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 @media(min-width:1500px) { .hero { height:680px; } }
 @media(max-width:1000px) { .desktop-nav { gap:15px; } .desktop-nav a.nav-sister { padding:8px 10px; } .wrap { width:calc(100% - 64px); } .contact-grid { gap:45px; } .header-consultation { display:none; } }
 @media(max-width:760px) {
- .wrap { width:calc(100% - 40px); } .site-header { height:78px; } .desktop-nav { display:none; } .mobile-menu-toggle { display:inline-flex; }
- .mobile-nav { display:flex; flex-direction:column; position:absolute; top:78px; left:0; right:0; background:var(--background); box-shadow:var(--shadow-menu); padding:15px 20px; gap:0; }
+ .wrap { width:calc(100% - 40px); } .site-header { height:96px; } .desktop-nav { display:none; } .mobile-menu-toggle { display:inline-flex; }
+ .mobile-nav { display:flex; flex-direction:column; position:absolute; top:96px; left:0; right:0; background:var(--background); box-shadow:var(--shadow-menu); padding:15px 20px; gap:0; }
  .mobile-nav a { padding:14px 5px; font-size:13px; border-bottom:1px solid var(--border); }
  .mobile-nav a.nav-sister { border:1px solid var(--primary); color:var(--primary); text-align:center; margin-top:12px; }
  .hero { min-height:610px; height:calc(100svh - 130px); max-height:740px; } .hero h1 { font-size:43px; } .hero-description { font-size:13px; max-width:350px; }

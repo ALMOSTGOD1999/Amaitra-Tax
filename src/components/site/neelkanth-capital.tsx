@@ -37,7 +37,7 @@ import bajajLogo from "@/assets/bajaj-amc.png";
 import arindamPhoto from "@/assets/md/arindam-maitra.jpg";
 import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 
-const PHONE = "7501126747";
+const PHONE = "033-65982863,8123730787,7501126747";
 const EMAIL = "neelkanthcapital2026@gmail.com";
 const WEBSITE = "www.neelkanthcapital.com";
 const ADDRESS = "42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
