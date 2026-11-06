@@ -1,6 +1,20 @@
 import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Menu, X, Phone, MapPin, ArrowUpRight, RotateCcw, Mail } from "lucide-react";
+import {
+  Menu,
+  X,
+  Phone,
+  MapPin,
+  ArrowUpRight,
+  RotateCcw,
+  Mail,
+  Facebook,
+  Instagram,
+  Linkedin,
+  Youtube,
+} from "lucide-react";
+
+const socialIcons = { Facebook, Instagram, LinkedIn: Linkedin, YouTube: Youtube };
 import { Reveal } from "@/components/site/reveal";
 import { Button } from "@/components/ui/button";
 import { InquiryForm } from "./inquiry-form";
@@ -157,6 +171,22 @@ export function SiteFooter() {
             <span>
               © {new Date().getFullYear()} Arindam Maitra Tax Consulting Unit. All rights reserved.
             </span>
+          </div>
+          <div className="footer-socials">
+            {business.socials.map((entry) => {
+              const Icon = socialIcons[entry.label as keyof typeof socialIcons];
+              return (
+                <a
+                  key={entry.label}
+                  href={entry.href}
+                  aria-label={`${business.name} on ${entry.label}`}
+                  target={entry.href.startsWith("http") ? "_blank" : undefined}
+                  rel={entry.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                >
+                  <Icon size={19} />
+                </a>
+              );
+            })}
           </div>
           <div className="footer-links">
             <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer">

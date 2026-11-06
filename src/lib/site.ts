@@ -20,6 +20,12 @@ export const business = {
     },
   ],
   maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
+  socials: [
+    { label: "Facebook", href: "#" },
+    { label: "Instagram", href: "#" },
+    { label: "LinkedIn", href: "#" },
+    { label: "YouTube", href: "#" },
+  ],
 };
 export const sisterVenture = {
   name: "Future Dreams",
