@@ -20,7 +20,7 @@ import { Button } from "@/components/ui/button";
 import { InquiryForm } from "./inquiry-form";
 import { business, nav } from "@/lib/site";
 import amLogo from "@/assets/logo.png";
-import fdLogo from "@/assets/fd-logo.jpg";
+import fdLogo from "@/assets/fd-logo.png";
 import ncLogo from "@/assets/neelkanth-logo.png";
 
 function brandFor(pathname: string) {
