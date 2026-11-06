@@ -40,7 +40,7 @@ import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 const PHONE = "8123730787,033-65982863,7501126747";
 const EMAIL = "neelkanthcapital2026@gmail.com";
 const WEBSITE = "www.neelkanthcapital.com";
-const ADDRESS = "42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
+const ADDRESS = "Tulip Towers, 42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
 
 const COMMITMENTS = [
   {
