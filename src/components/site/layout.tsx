@@ -127,12 +127,6 @@ export function ContactDetails() {
           ))}
         </span>
       </div>
-      <div className="contact-line">
-        <ArrowUpRight size={18} />
-        <a href={business.maps} target="_blank" rel="noopener noreferrer">
-          Get directions to our Berhampore office
-        </a>
-      </div>
       <p className="form-note">Please call to confirm office hours and appointment availability.</p>
     </>
   );
@@ -175,7 +169,9 @@ export function SiteFooter() {
             </span>
           </div>
           <div className="footer-socials">
-            {business.socials.map((entry) => {
+            {business.socials
+              .filter((entry) => !entry.only || entry.only === pathname)
+              .map((entry) => {
               const Icon = socialIcons[entry.label as keyof typeof socialIcons];
               return (
                 <a

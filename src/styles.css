@@ -62,6 +62,8 @@ button,a,input,select,textarea { outline-offset:4px; }
 .hero-copy { position:relative; z-index:1; padding-block:55px; }
 .eyebrow { font-size:10px; font-weight:600; text-transform:uppercase; color:var(--primary); display:flex; align-items:center; gap:12px; }
 .eyebrow::before { content:''; width:30px; height:1px; background:var(--primary); }
+.hero-copy .eyebrow { font-size:15px; gap:14px; }
+.hero-copy .eyebrow::before { width:42px; }
 h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 .hero h1 { font-size:62px; line-height:1.12; max-width:800px; margin:23px 0; }
 .hero h1 span { display:block; }

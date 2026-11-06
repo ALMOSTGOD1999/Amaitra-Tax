@@ -21,11 +21,15 @@ export const business = {
   ],
   maps: "https://www.google.com/maps?q=24.0844266,88.2559297&z=17&hl=en",
   socials: [
-    { label: "Facebook", href: "https://www.facebook.com/share/19nHmVaAmb/" },
+    {
+      label: "Facebook",
+      href: "https://www.facebook.com/share/19nHmVaAmb/",
+      only: "/future-dreams",
+    },
     { label: "Instagram", href: "#" },
     { label: "LinkedIn", href: "#" },
     { label: "YouTube", href: "#" },
-  ],
+  ] as Array<{ label: string; href: string; only?: string }>,
 };
 export const sisterVenture = {
   name: "Future Dreams",
