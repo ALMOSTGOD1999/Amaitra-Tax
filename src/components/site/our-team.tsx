@@ -1,3 +1,4 @@
+import proprietorPhoto from "@/assets/team/arindam-maitra-proprietor.jpg";
 import team01 from "@/assets/team/team-01.jpg";
 import team02 from "@/assets/team/team-02.jpg";
 import team03 from "@/assets/team/team-03.jpg";
@@ -46,6 +47,28 @@ export function OurTeamSection() {
   return (
     <section className="bg-background py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-6">
+        {/* Proprietor — solo, centered on top. Replace bytes of arindam-maitra-proprietor.jpg with the new portrait to swap. */}
+        <figure className="mb-16 flex flex-col items-center text-center">
+          <div className="relative size-56 shrink-0 overflow-hidden rounded-full ring-2 ring-primary/70 ring-offset-4 ring-offset-background sm:size-64">
+            <img
+              src={proprietorPhoto}
+              alt="Portrait of Arindam Maitra"
+              loading="eager"
+              fetchPriority="high"
+              className="size-full object-cover"
+            />
+          </div>
+          <span aria-hidden="true" className="mt-7 h-px w-12 bg-primary/70" />
+          <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-primary">
+            Arindam Maitra Tax Firm
+          </p>
+          <h2 className="mt-2 font-serif text-3xl font-bold text-foreground sm:text-4xl">
+            Arindam Maitra
+          </h2>
+          <p className="mt-2 text-[11px] font-medium uppercase tracking-[0.18em] text-muted-foreground">
+            Proprietor
+          </p>
+        </figure>
         <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {TEAM.map((member) => (
             <li
