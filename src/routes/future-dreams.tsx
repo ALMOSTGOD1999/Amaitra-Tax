@@ -29,8 +29,8 @@ const fdAlt = [
 ];
 const fdPartners = [
   { name: "Arindam Maitra", role: "Managing Partner", photo: fdPartner1 },
-  { name: "Sayan Kumar Das", role: "Managing Partner & System Head ", photo: fdPartner2 },
-  { name: "Avipsa Maitra", role: "Managing Partner @ Operational Head", photo: fdPartner3 },
+  { name: "Sayan Kumar Das", role: "Managing Partner & Systems Head ", photo: fdPartner2 },
+  { name: "Avipsa Maitra", role: "Managing Partner & Operational Head", photo: fdPartner3 },
 ];
 
 function FutureDreams() {

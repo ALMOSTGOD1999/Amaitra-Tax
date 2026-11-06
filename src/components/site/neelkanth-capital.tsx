@@ -286,20 +286,20 @@ function ManagingDirectors() {
     <section className="py-24">
       <div className="section-shell">
         <SectionHeading eyebrow="Leadership" title="Our Leaderships" />
-        <div className="mx-auto mt-14 grid max-w-3xl gap-5 sm:grid-cols-2">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-8 sm:grid-cols-2">
           {DIRECTORS.map((d) => (
             <div
               key={d.name}
-              className="card-hover rounded-3xl border border-primary/10 bg-card p-7 text-center shadow-[var(--shadow-card)]"
+              className="card-hover rounded-3xl border border-primary/10 bg-card p-10 text-center shadow-[var(--shadow-card)] sm:p-12"
             >
               <img
                 src={d.photo}
                 alt={d.alt}
                 loading="lazy"
-                className="mx-auto h-32 w-32 rounded-full object-cover"
+                className="mx-auto h-44 w-44 rounded-full object-cover sm:h-56 sm:w-56"
               />
-              <h3 className="mt-5 text-lg font-bold text-foreground">{d.name}</h3>
-              <p className="mt-1 text-sm font-semibold text-primary">Managing Partner</p>
+              <h3 className="mt-8 text-2xl font-bold text-foreground">{d.name}</h3>
+              <p className="mt-2 text-base font-semibold text-primary">Managing Partner</p>
             </div>
           ))}
         </div>
