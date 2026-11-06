@@ -40,7 +40,7 @@ import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 const PHONE = "7501126747";
 const EMAIL = "neelkanthcapital2026@gmail.com";
 const WEBSITE = "www.neelkanthcapital.com";
-const ADDRESS = "42/G/F, Swarnamayee Road, Raninagar, Gora Bazar, Berhampore, West Bengal 742101";
+const ADDRESS = "42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
 
 const COMMITMENTS = [
   {
@@ -299,7 +299,7 @@ function ManagingDirectors() {
                 className="mx-auto h-32 w-32 rounded-full object-cover"
               />
               <h3 className="mt-5 text-lg font-bold text-foreground">{d.name}</h3>
-              <p className="mt-1 text-sm font-semibold text-primary">Managing Director</p>
+              <p className="mt-1 text-sm font-semibold text-primary">Managing Partner</p>
             </div>
           ))}
         </div>
