@@ -3,11 +3,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Building2, FileText, Landmark, Search } from "lucide-react";
 import { Reveal } from "@/components/site/reveal";
 import { pageHead } from "@/lib/site";
-import incomeTaxLogo from "@/assets/portal-logos/income-tax-efiling.svg.asset.json";
-import cbicLogo from "@/assets/portal-logos/cbic-gst.svg.asset.json";
-import tracesLogo from "@/assets/portal-logos/traces-portal.png.asset.json";
-import udyamLogo from "@/assets/portal-logos/udyam-registration.png.asset.json";
-import startupLogo from "@/assets/portal-logos/startup-india.png.asset.json";
+import incomeTaxLogo from "@/assets/portal-logos/income-tax-efiling.svg";
+import cbicLogo from "@/assets/portal-logos/cbic-gst.svg";
+import tracesLogo from "@/assets/portal-logos/traces-portal.png";
+import udyamLogo from "@/assets/portal-logos/udyam-registration.png";
+import startupLogo from "@/assets/portal-logos/startup-india.png";
 
 const resources = [
   {
