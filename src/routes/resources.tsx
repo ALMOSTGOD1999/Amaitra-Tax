@@ -3,11 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight, Building2, FileText, Landmark, Search } from "lucide-react";
 import { Reveal } from "@/components/site/reveal";
 import { pageHead } from "@/lib/site";
-import incomeTaxLogo from "@/assets/portal-logos/income-tax-efiling.svg.asset.json";
-import cbicLogo from "@/assets/portal-logos/cbic-gst.svg.asset.json";
-import tracesLogo from "@/assets/portal-logos/traces-portal.png.asset.json";
-import udyamLogo from "@/assets/portal-logos/udyam-registration.png.asset.json";
-import startupLogo from "@/assets/portal-logos/startup-india.png.asset.json";
 
 const resources = [
   {
@@ -16,7 +11,6 @@ const resources = [
     url: "https://www.incometax.gov.in/iec/foportal/",
     text: "Income tax returns and taxpayer services",
     mark: "Income Tax",
-    logo: incomeTaxLogo.url,
     icon: FileText,
   },
   {
@@ -33,7 +27,6 @@ const resources = [
     url: "https://cbic-gst.gov.in/",
     text: "GST laws, notifications and guidance",
     mark: "CBIC",
-    logo: cbicLogo.url,
     icon: Landmark,
   },
   {
@@ -42,7 +35,6 @@ const resources = [
     url: "https://www.tdscpc.gov.in/",
     text: "TDS statements, certificates and services",
     mark: "TRACES",
-    logo: tracesLogo.url,
     icon: FileText,
   },
   {
@@ -51,7 +43,6 @@ const resources = [
     url: "https://udyamregistration.gov.in/",
     text: "Official MSME registration and information",
     mark: "Udyam",
-    logo: udyamLogo.url,
     icon: Building2,
   },
   {
@@ -60,7 +51,6 @@ const resources = [
     url: "https://www.startupindia.gov.in/",
     text: "Startup recognition and programme information",
     mark: "Startup India",
-    logo: startupLogo.url,
     icon: Building2,
   },
   {
@@ -128,14 +118,8 @@ function Resources() {
                   aria-label={`Visit ${r.name} official website`}
                 >
                   <span className="resource-mark">
-                    {r.logo ? (
-                      <img src={r.logo} alt={`${r.name} official mark`} loading="lazy" />
-                    ) : (
-                      <>
-                        <Icon aria-hidden="true" />
-                        <span>{r.mark}</span>
-                      </>
-                    )}
+                    <Icon aria-hidden="true" />
+                    <span>{r.mark}</span>
                   </span>
                   <span className="resource-tile-title">{r.name}</span>
                   <span className="resource-tile-description">{r.text}</span>
