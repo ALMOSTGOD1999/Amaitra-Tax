@@ -16,7 +16,7 @@ const resources = [
     url: "https://www.incometax.gov.in/iec/foportal/",
     text: "Income tax returns and taxpayer services",
     mark: "Income Tax",
-    logo: incomeTaxLogo.url,
+    logo: incomeTaxLogo,
     icon: FileText,
   },
   {
@@ -33,7 +33,7 @@ const resources = [
     url: "https://cbic-gst.gov.in/",
     text: "GST laws, notifications and guidance",
     mark: "CBIC",
-    logo: cbicLogo.url,
+    logo: cbicLogo,
     icon: Landmark,
   },
   {
@@ -42,7 +42,7 @@ const resources = [
     url: "https://www.tdscpc.gov.in/",
     text: "TDS statements, certificates and services",
     mark: "TRACES",
-    logo: tracesLogo.url,
+    logo: tracesLogo,
     icon: FileText,
   },
   {
@@ -51,7 +51,7 @@ const resources = [
     url: "https://udyamregistration.gov.in/",
     text: "Official MSME registration and information",
     mark: "Udyam",
-    logo: udyamLogo.url,
+    logo: udyamLogo,
     icon: Building2,
   },
   {
@@ -60,7 +60,7 @@ const resources = [
     url: "https://www.startupindia.gov.in/",
     text: "Startup recognition and programme information",
     mark: "Startup India",
-    logo: startupLogo.url,
+    logo: startupLogo,
     icon: Building2,
   },
   {

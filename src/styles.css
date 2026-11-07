@@ -133,7 +133,24 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 .search-box { display:flex; align-items:center; gap:12px; border:1px solid var(--border); background:var(--background); padding:15px 20px; margin-bottom:22px; }
 .search-box input { border:none; outline:none; width:100%; font:14px var(--font-sans); background:transparent; }
 .filters { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:28px; }
-.resource-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.resources-page { background:var(--muted); min-height:65vh; }
+.resources-heading { text-align:center; padding:65px 0 54px; background:var(--muted); }
+.resources-heading .eyebrow { justify-content:center; }
+.resources-heading h1 { max-width:800px; margin:16px auto 14px; font:700 48px/1.12 var(--font-sans); color:var(--foreground); }
+.resources-heading p { margin:0; color:var(--muted-foreground); font-size:18px; line-height:1.7; }
+.resources-section { padding-block:0 75px; }
+.resources-section .search-box { max-width:570px; margin:0 auto 38px; background:var(--background); }
+.resource-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+.resource-tile { display:flex; flex-direction:column; align-items:center; text-align:center; min-height:270px; height:100%; padding:28px 20px 24px; background:var(--background); border:1px solid color-mix(in oklab,var(--primary) 18%,var(--border)); border-radius:18px; box-shadow:0 10px 24px color-mix(in oklab,var(--foreground) 5%,transparent); transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease; }
+.resource-tile:hover { transform:translateY(-5px); border-color:color-mix(in oklab,var(--primary) 55%,var(--border)); box-shadow:0 16px 32px color-mix(in oklab,var(--foreground) 10%,transparent); }
+.resource-mark { display:flex; align-items:center; justify-content:center; gap:9px; width:100%; min-height:82px; margin-bottom:18px; color:var(--foreground); }
+.resource-mark img { display:block; width:auto; max-width:min(100%,170px); height:auto; max-height:78px; object-fit:contain; }
+.resource-mark svg { width:39px; height:39px; stroke-width:1.7; color:var(--primary); }
+.resource-mark span { font-size:18px; font-weight:750; color:var(--foreground); }
+.resource-tile-title { display:block; font-size:17px; font-weight:700; line-height:1.35; color:var(--foreground); }
+.resource-tile-description { display:block; margin-top:8px; color:var(--muted-foreground); font-size:13px; line-height:1.6; }
+.resource-tile-link { display:inline-flex; align-items:center; gap:7px; margin-top:auto; padding-top:16px; color:var(--primary); font-size:12px; font-weight:700; }
+.resource-disclaimer { margin:32px auto 0; max-width:760px; text-align:center; color:var(--muted-foreground); font-size:12px; line-height:1.7; }
 .resource { border:1px solid var(--border); padding:30px; }
 .resource-logo { display:flex; align-items:center; justify-content:center; height:84px; border:1px solid var(--border); border-radius:8px; background:var(--background); margin-bottom:20px; padding:12px; }
 .resource-logo img { max-height:56px; max-width:100%; width:auto; height:auto; object-fit:contain; }
@@ -172,7 +189,18 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
  .mobile-nav a.nav-sister { border:1px solid var(--primary); color:var(--primary); text-align:center; margin-top:12px; }
  .hero { min-height:610px; height:calc(100svh - 130px); max-height:740px; } .hero h1 { font-size:43px; } .hero-description { font-size:13px; max-width:350px; }
  .hero-image { object-position:65% center; } .hero-copy { padding-block:45px; } .hero-location { font-size:8px; bottom:20px; }
- .services-preview,.process-row,.service-list,.resource-grid,.contact-grid,.split-content,.venture-grid { grid-template-columns:1fr; gap:32px; }
+ .services-preview,.process-row,.service-list,.contact-grid,.split-content,.venture-grid { grid-template-columns:1fr; gap:32px; }
+ .resource-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+ .resources-heading { padding:44px 0 34px; }
+ .resources-heading h1 { font-size:34px; }
+ .resources-heading p { font-size:15px; }
+ .resources-section { padding-bottom:50px; }
+ .resources-section .search-box { margin-bottom:24px; }
+ .resource-tile { min-height:250px; padding:22px 14px 18px; border-radius:12px; }
+ .resource-mark { min-height:72px; margin-bottom:12px; }
+ .resource-mark img { max-width:145px; max-height:66px; }
+ .resource-tile-title { font-size:15px; }
+ .resource-tile-description { font-size:12px; }
  .services-preview { padding-block:50px; gap:35px; } .section { padding-block:55px; }
  .section-heading { font-size:31px; } .faq-item { padding:20px; } .faq-preview-grid { grid-template-columns:1fr; }
  .footer-title { font-size:32px; } .site-footer { padding-top:55px; } .inquiry-form { padding:23px; } .form-grid { grid-template-columns:1fr; gap:0; }
