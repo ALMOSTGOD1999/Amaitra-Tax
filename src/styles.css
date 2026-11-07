@@ -110,7 +110,7 @@ h1,h2,h3 { font-family:var(--font-serif); font-weight:400; }
 .footer-bottom { border-top:1px solid color-mix(in oklab,var(--inverse) 14%,transparent); margin-top:60px; padding-block:28px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px; font-size:10px; color:var(--inverse-muted); }
 .footer-links { display:flex; gap:22px; flex-wrap:wrap; }
 .footer-socials { display:flex; gap:18px; align-items:center; }
-.footer-socials a { color:var(--inverse-muted); display:inline-flex; padding:4px; }
+.footer-socials a,.footer-socials span { color:var(--inverse-muted); display:inline-flex; padding:4px; }
 .footer-socials a:hover { color:var(--primary); }
 .footer-legal { display:flex; align-items:center; gap:12px; }
 .footer-logo { height:40px; width:auto; max-width:170px; object-fit:contain; border-radius:4px; display:block; }

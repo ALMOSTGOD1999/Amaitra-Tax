@@ -169,10 +169,16 @@ export function SiteFooter() {
             </span>
           </div>
           <div className="footer-socials">
-            {business.socials
-              .filter((entry) => !entry.only || entry.only === pathname)
-              .map((entry) => {
+            {business.socials.map((entry) => {
               const Icon = socialIcons[entry.label as keyof typeof socialIcons];
+              const linked = !entry.only || entry.only === pathname;
+              if (!linked) {
+                return (
+                  <span key={entry.label} title={entry.label}>
+                    <Icon size={19} />
+                  </span>
+                );
+              }
               return (
                 <a
                   key={entry.label}
