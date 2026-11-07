@@ -8,6 +8,7 @@ import { business, fdServices, pageHead, sisterVenture } from "@/lib/site";
 import loansPhoto from "@/assets/fd-loans.jpg";
 import taxationPhoto from "@/assets/fd-taxation.jpg";
 import wealthPhoto from "@/assets/fd-wealth.jpg";
+import fdHeroBg from "@/assets/future dreams background.png";
 import fdPartner1 from "@/assets/fd-partner-1.jpg";
 import fdPartner2 from "@/assets/fd-partner-2.jpg";
 import fdPartner3 from "@/assets/fd-partner-3.jpg";
@@ -40,6 +41,8 @@ function FutureDreams() {
         eyebrow="A sister venture"
         title="Future Dreams."
         description="Financial & Marketing Consultancy — loans, taxation, registrations, insurance and investments for individuals, families and local businesses across Berhampore and Murshidabad, from the same head office as Arindam Maitra Tax Consulting Unit."
+        image={fdHeroBg}
+        imageAlt="Businessman climbing a rising growth arrow over a city skyline at sunset"
       />
       <section className="section wrap">
         <div className="eyebrow">Our Leaderships</div>

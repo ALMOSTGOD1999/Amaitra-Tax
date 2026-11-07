@@ -224,14 +224,24 @@ export function PageBanner({
   eyebrow,
   title,
   description,
+  image,
+  imageAlt = "",
 }: {
   eyebrow: string;
   title: string;
   description: string;
+  image?: string;
+  imageAlt?: string;
 }) {
   return (
-    <section className="page-banner">
-      <div className="wrap">
+    <section className={image ? "page-banner page-banner-photo" : "page-banner"}>
+      {image && (
+        <>
+          <img src={image} alt={imageAlt} className="page-banner-img" />
+          <div className="page-banner-scrim" aria-hidden="true" />
+        </>
+      )}
+      <div className={image ? "wrap page-banner-content" : "wrap"}>
         <div className="eyebrow">{eyebrow}</div>
         <h1>{title}</h1>
         <span className="banner-rule" aria-hidden="true" />

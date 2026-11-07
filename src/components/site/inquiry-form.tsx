@@ -12,11 +12,36 @@ const SLOTS = [
   "2:30 – 3:00 PM",
 ];
 
+function toISODate(date: Date): string {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function tomorrowISO(): string {
+  const now = new Date();
+  return toISODate(new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1));
+}
+
+function formatDate(value: string): string {
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) return value;
+  return new Date(year, month - 1, day).toLocaleDateString("en-IN", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
+
 export function InquiryForm() {
   const [draft, setDraft] = useState("");
   const [copied, setCopied] = useState(false);
+  const [minDate] = useState(tomorrowISO);
 
   function buildDraft(data: FormData) {
+    const date = data.get("date");
     const slot = data.get("slot");
     const lines = [
       "Consultation enquiry",
@@ -24,6 +49,7 @@ export function InquiryForm() {
       `Phone: ${data.get("phone")}`,
       `Service: ${data.get("service")}`,
     ];
+    if (date) lines.push(`Preferred date: ${formatDate(String(date))}`);
     if (slot) lines.push(`Preferred slot (Mon–Fri): ${slot}`);
     lines.push(String(data.get("message") ?? ""));
     return lines.join("\n");
@@ -36,6 +62,7 @@ export function InquiryForm() {
 
   function whatsappHref(form: HTMLFormElement) {
     const data = new FormData(form);
+    const date = data.get("date");
     const slot = data.get("slot");
     const parts = [
       "Hello, I would like to book a consultation slot at Arindam Maitra Tax Consulting Unit.",
@@ -43,6 +70,7 @@ export function InquiryForm() {
       `Phone: ${data.get("phone")}`,
       `Service: ${data.get("service")}`,
     ];
+    if (date) parts.push(`Preferred date: ${formatDate(String(date))}`);
     if (slot) parts.push(`Preferred slot (Mon–Fri, 12–3 PM): ${slot}`);
     const msg = data.get("message");
     if (msg) parts.push(`Message: ${msg}`);
@@ -87,6 +115,13 @@ export function InquiryForm() {
           </select>
         </div>
         <div className="field">
+          <label htmlFor="inquiry-date">Preferred date</label>
+          <input id="inquiry-date" name="date" type="date" required min={minDate} />
+          <p className="form-note">
+            Pick any date after today — today and earlier dates are unavailable.
+          </p>
+        </div>
+        <div className="field">
           <label htmlFor="inquiry-slot">
             Preferred slot — Monday to Friday, 12 PM – 3 PM (30 minutes each)
           </label>
@@ -122,8 +157,10 @@ export function InquiryForm() {
           className="w-full mt-3"
           type="button"
           onClick={(e) => {
+            const form = e.currentTarget.form as HTMLFormElement;
+            if (!form.reportValidity()) return;
             window.open(
-              whatsappHref(e.currentTarget.form as HTMLFormElement),
+              whatsappHref(form),
               "_blank",
               "noopener,noreferrer",
             );
