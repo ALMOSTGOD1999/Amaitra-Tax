@@ -44,7 +44,7 @@ function FutureDreams() {
         image={fdHeroBg}
         imageAlt="Businessman climbing a rising growth arrow over a city skyline at sunset"
       />
-      <section className="section wrap">
+      <section className="section wrap fd-band">
         <div className="eyebrow">Our Leaderships</div>
         <h2 className="section-heading">Our Leaderships</h2>
         <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
