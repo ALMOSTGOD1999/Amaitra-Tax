@@ -1,7 +1,7 @@
 # Coolify / generic Docker deploy for TanStack Start (Nitro node-server).
-FROM oven/bun:1 AS build
+FROM node:22-slim AS build
 WORKDIR /app
-COPY package.json bun.lock ./
+COPY package.json package-lock.json ./
 RUN bun install --frozen-lockfile
 COPY . .
 RUN bun run build
@@ -13,3 +13,4 @@ ENV PORT=3333
 COPY --from=build /app/.output ./
 EXPOSE 3333
 CMD ["node", ".output/server/index.mjs"]
+ENV HOST=0.0.0.0
