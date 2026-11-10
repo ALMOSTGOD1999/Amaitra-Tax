@@ -24,6 +24,11 @@ function tomorrowISO(): string {
   return toISODate(new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1));
 }
 
+function isWeekend(date: Date): boolean {
+  const day = date.getDay();
+  return day === 0 || day === 6; // 0 = Sunday, 6 = Saturday
+}
+
 function formatDate(value: string): string {
   const [year, month, day] = value.split("-").map(Number);
   if (!year || !month || !day) return value;
