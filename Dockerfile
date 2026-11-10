@@ -10,6 +10,7 @@ FROM node:22-slim AS runtime
 WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3333
-COPY --from=build /app/.output ./
+# Copy .output directory from build stage - nitro generates .output/server/ with index.mjs
+COPY --from=build /app/.output/server ./server
 EXPOSE 3333
-CMD ["node", ".output/server/index.mjs"]
+CMD ["node", "server/index.mjs"]
