@@ -49,7 +49,7 @@ function FutureDreams() {
         Your One-Stop Destination for Financial Growth and Life's Essential Services."
         image={fdHeroBg}
         imageAlt="Businessman climbing a rising growth arrow over a city skyline at sunset"
-        descriptionClassName="text-primary font-bold text-lg"
+        descriptionClassName="text-primary font-bold text-base"
       />
       <section className="section wrap fd-leadership">
         <div className="eyebrow">Our Leaderships</div>
