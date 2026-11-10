@@ -35,9 +35,8 @@ function Home() {
             <span>Arindam Maitra</span>
             <em>Tax Consulting Unit</em>
           </h1>
-          <p className="hero-description">
+          <p className="hero-description text-blue-600 font-bold mt-0">
             Your Trust, Our Responsibility. Your Privacy, Our Priority.
-            <br />
             We are committed to protecting our clients' privacy and safeguarding their confidential
             information. Trust, discretion, and data security are at the heart of everything we do.
             Your information is always handled with the utmost care, responsibility, and

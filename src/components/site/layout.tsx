@@ -47,7 +47,6 @@ export function SiteHeader() {
             style={brand.wide ? { width: "auto", height: 84 } : undefined}
             fetchPriority="high"
           />
-          <p className="tagline text-blue-600 font-bold">Your Trust, Our Responsibility. Your Privacy, Our Priority.</p>
         </Link>
         <nav aria-label="Main navigation" className="desktop-nav">
           {nav.map((n) => (
