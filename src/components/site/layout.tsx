@@ -107,14 +107,13 @@ export function ContactDetails() {
       ))}
       <div className="contact-line">
         <Phone size={18} />
-        <span>
-          {business.phones.map((entry, index) => (
-            <span key={entry.href}>
-              {index > 0 && " / "}
-              <a href={entry.href}>{entry.label}</a>
-            </span>
+        <div className="flex gap-2">
+          {business.phones.map((entry) => (
+            <a key={entry.href} href={entry.href} className="text-primary hover:underline">
+              {entry.label}
+            </a>
           ))}
-        </span>
+        </div>
       </div>
       <div className="contact-line">
         <Mail size={18} />
