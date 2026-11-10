@@ -106,8 +106,8 @@ function WelcomeScene({ onClose }: { onClose: () => void }) {
         <div className="intro-line" />
         <p className="intro-services">Tax • Compliance • Advisory</p>
         <p className="intro-tagline">
-          Your Trust, Our Responsibility.
-          <br />F Your Privacy, Our Priority.
+          Your Trust, Our Responsibility -
+          <br />F Your Privacy, Our Priority. since 1997
         </p>
       </div>
       <span className="intro-bottom">PRECISION. CLARITY. PEACE OF MIND.</span>
