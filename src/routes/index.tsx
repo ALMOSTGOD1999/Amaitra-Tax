@@ -36,10 +36,10 @@ function Home() {
             <em>Tax Consulting Unit</em>
           </h1>
           <p
-            className="hero-description text-blue-600 font-bold mt-0 underline text-lg"
+            className="hero-description text-blue-600 font-bold mt-0 text-lg"
             style={{ color: "var(--primary)" }}
           >
-            Your Trust, Our Responsibility - Your Privacy, Our Priority, since 1997
+            Your Trust, Our Responsibility - Your Privacy, Our Priority, since 1997-98
           </p>
           <p className="hero-description mt-2">
             We are committed to protecting our clients' privacy and safeguarding their confidential
