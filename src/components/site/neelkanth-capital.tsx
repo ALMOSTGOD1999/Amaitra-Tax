@@ -37,7 +37,7 @@ import bajajLogo from "@/assets/bajaj-amc.png";
 import arindamPhoto from "@/assets/md/arindam-maitra.jpg";
 import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
 
-const PHONE = "8123730787,033-65982863,7501126747";
+const PHONE = "033-65982863";
 const EMAIL = "neelkanthcapital2026@gmail.com";
 const WEBSITE = "www.neelkanthcapital.com";
 const ADDRESS = "Tulip Towers, 42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
@@ -508,11 +508,11 @@ function Contact() {
                 that's focused entirely on your goals.
               </p>
               <a
-                href={`tel:+91${PHONE}`}
+                href={neelkanth.phoneHref}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary-foreground px-7 py-3.5 text-sm font-bold text-primary-deep transition-transform hover:scale-[1.03]"
               >
                 <Phone className="h-4 w-4" />
-                {PHONE}
+                {neelkanth.phone}
               </a>
             </div>
             <ul className="grid gap-4">
