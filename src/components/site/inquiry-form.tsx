@@ -124,6 +124,7 @@ export function InquiryForm() {
           <input id="inquiry-date" name="date" type="date" required min={minDate} />
           <p className="form-note">
             Pick any date after today — today and earlier dates are unavailable.
+            Saturday and Sunday are not available for appointment.
           </p>
         </div>
         <div className="field">
