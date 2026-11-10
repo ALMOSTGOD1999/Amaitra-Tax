@@ -40,6 +40,7 @@ const TEAM: TeamMember[] = [
   { name: "Kausik Saha", role: "Tax Assistant & Accountant", photo: team04 },
   { name: "Biltu Saha", role: "Sr. Tax Assistant", photo: team05 },
   { name: "Amit Karmakar", role: "Tax Assistant & Accountant", photo: team07 },
+  { name: "Suraj Singh Rawat", role: "Tax Assistant & Accountant", photo: team09 },
   { name: "Anindya Chandra", role: "Office Management & System", photo: team16 },
   { name: "Kanchan Sanyal", role: "Cashier & Accountant", photo: team02 },
   { name: "Bibek Das", role: "Accountant", photo: team14 },

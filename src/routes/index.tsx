@@ -35,7 +35,7 @@ function Home() {
             <span>Arindam Maitra</span>
             <em>Tax Consulting Unit</em>
           </h1>
-          <p className="hero-description text-blue-600 font-bold mt-0">
+          <p className="hero-description text-blue-600 font-bold mt-0 underline text-lg" style={{ color: 'var(--primary)' }}>
             Your Trust, Our Responsibility. Your Privacy, Our Priority.
 </p>
           <p className="hero-description mt-2">

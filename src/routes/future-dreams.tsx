@@ -46,9 +46,10 @@ function FutureDreams() {
 
         Loans • Taxation • Mutual Funds • Insurance • Travel • Real Estate
 
-        Your One-Stop Destination for Financial Growth and Life’s Essential Services."
+        Your One-Stop Destination for Financial Growth and Life's Essential Services."
         image={fdHeroBg}
         imageAlt="Businessman climbing a rising growth arrow over a city skyline at sunset"
+        descriptionClassName="text-primary font-bold text-lg"
       />
       <section className="section wrap fd-leadership">
         <div className="eyebrow">Our Leaderships</div>
