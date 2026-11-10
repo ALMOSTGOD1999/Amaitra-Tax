@@ -508,11 +508,11 @@ function Contact() {
                 that's focused entirely on your goals.
               </p>
               <a
-                href={neelkanth.phoneHref}
+                href={`tel:+91${PHONE}`}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary-foreground px-7 py-3.5 text-sm font-bold text-primary-deep transition-transform hover:scale-[1.03]"
               >
                 <Phone className="h-4 w-4" />
-                {neelkanth.phone}
+                {PHONE}
               </a>
             </div>
             <ul className="grid gap-4">
