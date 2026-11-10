@@ -37,6 +37,8 @@ function Home() {
           </h1>
           <p className="hero-description text-blue-600 font-bold mt-0">
             Your Trust, Our Responsibility. Your Privacy, Our Priority.
+</p>
+          <p className="hero-description mt-2">
             We are committed to protecting our clients' privacy and safeguarding their confidential
             information. Trust, discretion, and data security are at the heart of everything we do.
             Your information is always handled with the utmost care, responsibility, and
