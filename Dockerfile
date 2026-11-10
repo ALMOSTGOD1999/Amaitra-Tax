@@ -12,5 +12,7 @@ ENV NODE_ENV=production
 ENV PORT=3333
 # Copy .output directory from build stage - nitro generates .output/server/ with index.mjs
 COPY --from=build /app/.output/server ./server
+# Copy public assets (css, js, images) - nitro serves these from /app/public/
+COPY --from=build /app/.output/public/assets ./public/assets
 EXPOSE 3333
 CMD ["node", "server/index.mjs"]
