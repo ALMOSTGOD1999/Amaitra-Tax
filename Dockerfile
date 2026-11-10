@@ -11,5 +11,5 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3333
 COPY --from=build /app/.output ./
-EXPOSE 3000
+EXPOSE 3333
 CMD ["node", ".output/server/index.mjs"]
