@@ -30,7 +30,7 @@ function Home() {
           fetchPriority="high"
         />
         <div className="wrap hero-copy">
-          <div className="eyebrow">Tax • Compliance • Advisory</div>
+          <div className="eyebrow">Tax • Compliance • Advisory (since 1997-98)</div>
           <h1>
             <span>Arindam Maitra</span>
             <em>Tax Consulting Unit</em>
@@ -39,7 +39,7 @@ function Home() {
             className="hero-description text-blue-600 font-bold mt-0 text-lg"
             style={{ color: "var(--primary)" }}
           >
-            Your Trust, Our Responsibility - Your Privacy, Our Priority, since 1997-98
+            Your Trust, Our Responsibility - Your Privacy, Our Priority.
           </p>
           <p className="hero-description mt-2">
             We are committed to protecting our clients' privacy and safeguarding their confidential
