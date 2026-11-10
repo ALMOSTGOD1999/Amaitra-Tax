@@ -35,9 +35,12 @@ function Home() {
             <span>Arindam Maitra</span>
             <em>Tax Consulting Unit</em>
           </h1>
-          <p className="hero-description text-blue-600 font-bold mt-0 underline text-lg" style={{ color: 'var(--primary)' }}>
-            Your Trust, Our Responsibility. Your Privacy, Our Priority.
-</p>
+          <p
+            className="hero-description text-blue-600 font-bold mt-0 underline text-lg"
+            style={{ color: "var(--primary)" }}
+          >
+            Your Trust, Our Responsibility - Your Privacy, Our Priority, since 1997
+          </p>
           <p className="hero-description mt-2">
             We are committed to protecting our clients' privacy and safeguarding their confidential
             information. Trust, discretion, and data security are at the heart of everything we do.
