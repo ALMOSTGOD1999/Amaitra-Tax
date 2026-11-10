@@ -47,11 +47,6 @@ export function SiteHeader() {
             style={brand.wide ? { width: "auto", height: 84 } : undefined}
             fetchPriority="high"
           />
-          <p className="service-line text-primary">Tax • Compliance • Advisory</p>
-        <p className="site-name font-serif text-2xl font-bold text-foreground">
-          Arindam Maitra
-          <span className="ml-2">Tax Consulting Unit</span>
-        </p>
         </Link>
         <nav aria-label="Main navigation" className="desktop-nav">
           {nav.map((n) => (
