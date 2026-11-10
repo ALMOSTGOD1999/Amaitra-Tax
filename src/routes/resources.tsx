@@ -79,6 +79,38 @@ const resources = [
     mark: "West Bengal",
     icon: Landmark,
   },
+  {
+    name: "EPF Portal",
+    domain: "epfindia.gov.in",
+    url: "https://www.epfindia.gov.in/",
+    text: "Provident fund services and member facilities",
+    mark: "EPF",
+    icon: Landmark,
+  },
+  {
+    name: "ESIC Portal",
+    domain: "esic.nic.in",
+    url: "https://www.esic.nic.in/",
+    text: "Employee state insurance services and benefits",
+    mark: "ESIC",
+    icon: Landmark,
+  },
+  {
+    name: "UMANG",
+    domain: "umang.gov.in",
+    url: "https://umang.gov.in/",
+    text: "Unified Mobile Application for New-age Governance",
+    mark: "UMANG",
+    icon: FileText,
+  },
+  {
+    name: "CPGRAM",
+    domain: "pgportal.gov.in",
+    url: "https://pgportal.gov.in/",
+    text: "Centralized Public Grievance Redress and Monitoring System",
+    mark: "CPGRAM",
+    icon: Landmark,
+  },
 ];
 
 export const Route = createFileRoute("/resources")({

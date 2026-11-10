@@ -19,7 +19,7 @@ function About() {
       <PageBanner
         eyebrow="The practice"
         title="A clear view of your finances."
-        description="Rooted in Berhampore. Focused on making tax, compliance and financial decisions more straightforward."
+        description="Focused on taxation, compliance and financial decisions more straightforward."
       />
       <section className="section wrap split-content">
         <div className="prose">
@@ -40,9 +40,8 @@ function About() {
               information that matters and help you understand the next steps.
             </p>
             <p>
-              Visit our office in Gora Bazar, Berhampore, or call to discuss the support you need.
-              Each engagement begins with a conversation about your requirements and the relevant
-              records.
+              Visit our office or call to discuss the support you need. Each engagement begins with
+              a conversation about your requirements and the relevant records.
             </p>
             <Button variant="corporate" asChild className="mt-5">
               <Link to="/contact">

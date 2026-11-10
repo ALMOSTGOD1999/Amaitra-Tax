@@ -25,24 +25,27 @@ interface TeamMember {
 }
 
 const TEAM: TeamMember[] = [
-  { name: "Sanjoy Sarkar", role: "Office Executive — Systems", photo: team11 },
+  { name: "Sanjoy Sarkar", role: "Sr. Tax Consultant & Office Executive — Systems", photo: team11 },
   { name: "Madhusudan Mandal", role: "Sr. Tax Consultant & Advisor (IT & GST)", photo: team19 },
-  { name: "Jyotirmay Adhikary", role: "Office Executive — Management", photo: team03 },
-  { name: "Asim Datta", role: "GST & Accounts Head", photo: team12 },
-  { name: "Arnab Chakraborty", role: "Accounting Analyst", photo: team06 },
+  {
+    name: "Jyotirmay Adhikary",
+    role: "Sr. Tax Consultant & Office Executive — Management",
+    photo: team03,
+  },
+  { name: "Asim Datta", role: "Sr. Tax Consultant & GST/Accounts Head", photo: team12 },
+  { name: "Arnab Chakraborty", role: "Sr. Tax Consultant & Accounting Analyst", photo: team06 },
   { name: "Mriganka Sarkar", role: "Sr. Tax Assistant & Accountant", photo: team10 },
   { name: "Niladri Mandal", role: "Sr. Tax Assistant & Accountant", photo: team08 },
   { name: "Sayan Kumar Das", role: "Office Management & System Head", photo: team17 },
   { name: "Kausik Saha", role: "Tax Assistant & Accountant", photo: team04 },
   { name: "Biltu Saha", role: "Sr. Tax Assistant", photo: team05 },
   { name: "Amit Karmakar", role: "Tax Assistant & Accountant", photo: team07 },
-  { name: "Suraj Singh Rawat", role: "Tax Assistant & Accountant", photo: team09 },
-  { name: "Narayan Dey", role: "Pantry & House Keeping", photo: team18 },
   { name: "Anindya Chandra", role: "Office Management & System", photo: team16 },
   { name: "Kanchan Sanyal", role: "Cashier & Accountant", photo: team02 },
   { name: "Bibek Das", role: "Accountant", photo: team14 },
   { name: "Chandan Chakrabarty", role: "Accountant", photo: team15 },
   { name: "Soumya Pal", role: "Tax Assistant", photo: team01 },
+  { name: "Narayan Dey", role: "Pantry & House Keeping", photo: team18 },
 ];
 
 export function OurTeamSection() {

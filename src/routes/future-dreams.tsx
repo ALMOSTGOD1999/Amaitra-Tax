@@ -40,7 +40,13 @@ function FutureDreams() {
       <PageBanner
         eyebrow="A sister venture"
         title="Future Dreams."
-        description="Financial & Marketing Consultancy — loans, taxation, registrations, insurance and investments for individuals, families and local businesses across Berhampore and Murshidabad, from the same head office as Arindam Maitra Tax Consulting Unit."
+        description="Financial & marketing Consultancy
+
+        Comprehensive Financial, Investment & Lifestyle Solutions.
+
+        Loans • Taxation • Mutual Funds • Insurance • Travel • Real Estate
+
+        Your One-Stop Destination for Financial Growth and Life’s Essential Services."
         image={fdHeroBg}
         imageAlt="Businessman climbing a rising growth arrow over a city skyline at sunset"
       />
