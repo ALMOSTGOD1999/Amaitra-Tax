@@ -36,11 +36,7 @@ import iciciLogo from "@/assets/icici-pru.png";
 import bajajLogo from "@/assets/bajaj-amc.png";
 import arindamPhoto from "@/assets/md/arindam-maitra.jpg";
 import soumikPhoto from "@/assets/md/soumik-kumar.jpg";
-
-const PHONE = "033-65982863";
-const EMAIL = "neelkanthcapital2026@gmail.com";
-const WEBSITE = "www.neelkanthcapital.com";
-const ADDRESS = "Tulip Towers, 42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101";
+import { neelkanth } from "@/lib/site";
 
 const COMMITMENTS = [
   {
@@ -470,25 +466,25 @@ function Contact() {
     {
       icon: Phone,
       label: "Call Us",
-      value: PHONE,
-      href: `tel:+91${PHONE}`,
+      value: neelkanth.phone,
+      href: neelkanth.phoneHref,
     },
     {
       icon: Mail,
       label: "Email",
-      value: EMAIL,
-      href: `mailto:${EMAIL}`,
+      value: neelkanth.email,
+      href: `mailto:${neelkanth.email}`,
     },
     {
       icon: Globe,
       label: "Website",
-      value: WEBSITE,
-      href: `https://${WEBSITE}`,
+      value: neelkanth.website,
+      href: `${neelkanth.websiteUrl}`,
     },
     {
       icon: MapPin,
       label: "Office",
-      value: ADDRESS,
+      value: neelkanth.address,
     },
   ];
   return (
@@ -508,11 +504,11 @@ function Contact() {
                 that's focused entirely on your goals.
               </p>
               <a
-                href={`tel:+91${PHONE}`}
+                href={`tel:+91${neelkanth.phone}`}
                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary-foreground px-7 py-3.5 text-sm font-bold text-primary-deep transition-transform hover:scale-[1.03]"
               >
                 <Phone className="h-4 w-4" />
-                {PHONE}
+                {neelkanth.phone}
               </a>
             </div>
             <ul className="grid gap-4">
