@@ -52,6 +52,10 @@ export const neelkanth = {
   websiteUrl: "https://www.neelkanthcapital.com",
   phone: "033-65982863",
   phoneHref: "tel:033-65982863",
+  phones: [
+    { label: "033-65982863", href: "tel:033-65982863" },
+    { label: "98300 82863", href: "tel:+919830082863" },
+  ],
   email: "neelkanthcapital2026@gmail.com",
   address: "Tulip Towers,42/G/F, Swarnamayee Road, Berhampore, West Bengal 742101",
   stats: [

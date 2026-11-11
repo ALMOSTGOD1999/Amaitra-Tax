@@ -464,12 +464,6 @@ function WhyChooseUs() {
 function Contact() {
   const items = [
     {
-      icon: Phone,
-      label: "Call Us",
-      value: neelkanth.phone,
-      href: neelkanth.phoneHref,
-    },
-    {
       icon: Mail,
       label: "Email",
       value: neelkanth.email,
